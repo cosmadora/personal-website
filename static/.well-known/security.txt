@@ -1,0 +1,4 @@
+Contact: mailto:security@lauka.net
+Expires: 2033-08-08T21:59:00.000Z
+Preferred-Languages: en, de
+Canonical: https://www.lauka.net/.well-known/security.txt
