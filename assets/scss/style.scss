@@ -1,0 +1,166 @@
+$body-font-color: #c1c1c1;
+$link-font-color: #00cccc;
+$heading-font-color: #d66388;
+$code-font-color: cornflowerblue;
+$special-font-color: #c2f486;
+$main-font-family: Consolas, monaco, monospace;
+
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: $link-font-color;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: $main-font-family;
+	font-size: 130%;
+	line-height: 1.4;
+	margin: 3% 5%;
+	max-width: 50em;
+	background: #303030;
+	color: $body-font-color;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 100%;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: $heading-font-color;
+	&:before {
+		content: "# ";
+		content: "# "/ "";
+	}
+	&:after {
+		content: "-----";
+		content: "-----" / "";
+		display: block;
+	}
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 100%;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: $heading-font-color;
+	&:before {
+		content: "## ";
+		content: "## "/ "";
+	}
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 100%;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: $heading-font-color;
+	&:before {
+		content: "### ";
+		content: "### "/ "";
+	}
+}
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	margin-bottom: .75rem;
+	>code {
+		font: unset;
+		font-family: $main-font-family;
+		color: $code-font-color;
+	}
+}
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+strong {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-weight: 700;
+	color: $heading-font-color;
+	&:before {
+		content: "*";
+		content: "*" / "";
+	}
+	&:after {
+		content: "*";
+		content: "*" / "";
+	}
+}
+u {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	list-style-type: none;
+	margin-left: 1rem;
+	>li {
+		&:before {
+			content: "-";
+			position: absolute;
+			margin-left: -1.1rem;
+		}
+	}
+}
+code {
+	font: unset;
+	font-family: $main-font-family;
+	color: $code-font-color;
+}
+.special {
+	color: $special-font-color;
+	font-style: normal;
+}

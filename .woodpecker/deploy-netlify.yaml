@@ -1,0 +1,34 @@
+steps:
+  build:
+    image: golang:1.20-bookworm
+    when:
+      - event: push
+        branch: [main, staging] 
+    commands:
+      - wget https://github.com/gohugoio/hugo/releases/download/v0.116.0/hugo_extended_0.116.0_linux-amd64.deb && apt install ./hugo_extended_0.116.0_linux-amd64.deb && rm -f hugo_extended_0.116.0_linux-amd64.deb
+      - hugo --minify --destination ./public
+      
+  deploy-staging:
+    image: node:alpine
+    when:
+      - event: push
+        branch: staging
+    secrets:
+      - NETLIFY_AUTH_TOKEN
+      - NETLIFY_SITE_ID
+    commands:
+      - npm install netlify-cli -g
+      - netlify deploy --alias stage --dir ./public
+
+
+  deploy-production:
+    image: node:alpine
+    when:
+      - event: push
+        branch: main
+    secrets:
+      - NETLIFY_AUTH_TOKEN
+      - NETLIFY_SITE_ID
+    commands:
+      - npm install netlify-cli -g
+      - netlify deploy --prod --dir ./public
