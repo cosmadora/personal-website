@@ -46,7 +46,7 @@ Some ways to contact me:
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 
 ## About this website
-This website is open source and hosted at [Codeberg e.V.](https://codeberg.org/lauralani/www-lauka-net). It's an entirely static webpage generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted with Netlify.  
+This website is open source and hosted at [Codeberg e.V.](https://code.lila.network/lauralani/personal-website). It's an entirely static webpage generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted with Netlify.  
   
 This page makes due without any cookies, frontend javascript, tracking and databases in the effort to make the web quick and usable again :)  
   
