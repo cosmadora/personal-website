@@ -39,17 +39,19 @@ Soon
 
 ## Contact
 Some ways to contact me:
-- <a rel="me" href="https://social.lila.network/@lauralani">@lauralani@lila.network</a>
+- {{< fediverse-handle >}}
 - mail (at) (this domain) [(PGP and S/MIME Keys)](/encryption)
 - matrix: @lauralani:matrix.org or @lauralani:lila.network
 - [LinkedIn](https://www.linkedin.com/in/laura-kalb/)
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 
 ## About this website
-This website is open source and hosted at [Codeberg e.V.](https://code.lila.network/lauralani/personal-website). It's an entirely static webpage generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted with Netlify.  
+This website is [open source](https://code.lila.network/lauralani/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted with Netlify.  
   
-This page makes due without any cookies, frontend javascript, tracking and databases in the effort to make the web quick and usable again :)  
+This page makes due without any cookies, javascript frameworks, tracking and databases in the effort to make the web quick and usable again :)  
   
 This page was last updated at {{< last-updated >}}  
   
-Copyright (c) Laura Kalb 2021-{{< copyright-date >}} - [Impressum und Datenschutzerklärung](/impressum.html)
+Copyright (c) Laura Kalb 2021-{{< copyright-date >}}
+
+[Impressum und Datenschutzerklärung](/impressum.html)
