@@ -3,9 +3,16 @@ $link-font-color: #00cccc;
 $heading-font-color: #d66388;
 $code-font-color: cornflowerblue;
 $special-font-color: #c2f486;
-$main-font-family: Consolas, monaco, monospace;
+$main-font-family: 'Open Sans', sans-serif;
 $min-device-width: 940px;
 
+@font-face {
+	font-display: swap;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/open-sans-v35-latin-regular.woff2') format('woff2');
+}
 
 a {
 	margin: 0;
