@@ -4,6 +4,8 @@ $heading-font-color: #d66388;
 $code-font-color: cornflowerblue;
 $special-font-color: #c2f486;
 $main-font-family: Consolas, monaco, monospace;
+$min-device-width: 940px;
+
 
 a {
 	margin: 0;
@@ -163,4 +165,15 @@ code {
 .special {
 	color: $special-font-color;
 	font-style: normal;
+}
+
+@media (max-width: $min-device-width) {
+	body {
+		padding: 15px;
+		line-break: normal;
+	}
+
+	a, code {
+		line-break: anywhere;
+	}
 }
