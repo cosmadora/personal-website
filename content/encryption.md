@@ -2,7 +2,7 @@
 title: "Lauras SMIME and GPG Keys"
 date: 2023-06-23T10:02:23+02:00
 ---
-# Lauras Encryption Keys
+
 Last updated: `{{< last-updated >}}`
 ## GPG Keys
 ### mail@lauka.net

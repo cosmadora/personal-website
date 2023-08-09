@@ -15,10 +15,12 @@ a {
 	vertical-align: baseline;
 	text-decoration: none;
 	color: $link-font-color;
+
 	&:hover {
 		text-decoration: underline;
 	}
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -33,6 +35,7 @@ body {
 	background: #303030;
 	color: $body-font-color;
 }
+
 h1 {
 	margin: 0;
 	padding: 0;
@@ -43,16 +46,19 @@ h1 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
+
 	&:before {
 		content: "# ";
-		content: "# "/ "";
+		content: "# " / "";
 	}
+
 	&:after {
 		content: "-----";
 		content: "-----" / "";
 		display: block;
 	}
 }
+
 h2 {
 	margin: 0;
 	padding: 0;
@@ -63,11 +69,13 @@ h2 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
+
 	&:before {
 		content: "## ";
-		content: "## "/ "";
+		content: "## " / "";
 	}
 }
+
 h3 {
 	margin: 0;
 	padding: 0;
@@ -78,11 +86,13 @@ h3 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
+
 	&:before {
 		content: "### ";
-		content: "### "/ "";
+		content: "### " / "";
 	}
 }
+
 html {
 	margin: 0;
 	padding: 0;
@@ -90,6 +100,7 @@ html {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 li {
 	margin: 0;
 	padding: 0;
@@ -97,6 +108,7 @@ li {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 p {
 	margin: 0;
 	padding: 0;
@@ -104,12 +116,14 @@ p {
 	font: inherit;
 	vertical-align: baseline;
 	margin-bottom: .75rem;
+
 	>code {
 		font: unset;
 		font-family: $main-font-family;
 		color: $code-font-color;
 	}
 }
+
 span {
 	margin: 0;
 	padding: 0;
@@ -117,6 +131,7 @@ span {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 strong {
 	margin: 0;
 	padding: 0;
@@ -125,15 +140,18 @@ strong {
 	vertical-align: baseline;
 	font-weight: 700;
 	color: $heading-font-color;
+
 	&:before {
 		content: "*";
 		content: "*" / "";
 	}
+
 	&:after {
 		content: "*";
 		content: "*" / "";
 	}
 }
+
 u {
 	margin: 0;
 	padding: 0;
@@ -141,6 +159,7 @@ u {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -149,6 +168,7 @@ ul {
 	vertical-align: baseline;
 	list-style-type: none;
 	margin-left: 1rem;
+
 	>li {
 		&:before {
 			content: "-";
@@ -157,11 +177,13 @@ ul {
 		}
 	}
 }
+
 code {
 	font: unset;
 	font-family: $main-font-family;
 	color: $code-font-color;
 }
+
 .special {
 	color: $special-font-color;
 	font-style: normal;
@@ -169,11 +191,15 @@ code {
 
 @media (max-width: $min-device-width) {
 	body {
-		padding: 15px;
+		padding: 0 15px;
 		line-break: normal;
 	}
 
-	a, code {
+	a {
+		line-break: loose;
+	}
+
+	code {
 		line-break: anywhere;
 	}
 }
