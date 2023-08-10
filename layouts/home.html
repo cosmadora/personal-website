@@ -1,14 +1,16 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ or .Title .Site.Title }}</title>
-    {{ $style := resources.Get "scss/style.scss" | toCSS | minify }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-  </head>
-  <body>
-    <h1>{{ .Site.Title }}</h1>
-    {{ .Content }}
-  </body>
+<html lang="en">
+
+<head>
+  <title>{{ or .Title .Site.Title }}</title>
+  {{ partial "head/defaults.html" . }}
+  {{ partial "head/styling.html" . }}
+  {{ partial "head/sharing.html" . }}
+</head>
+
+<body>
+  <h1>{{ .Site.Title }}</h1>
+  {{ .Content }}
+</body>
+
 </html>

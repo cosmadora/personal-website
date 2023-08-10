@@ -1,11 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{ .CurrentSection.Title }}{{ end }}</title>
-    {{ $style := resources.Get "scss/style.scss" | toCSS | minify }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ partial "head/defaults.html" . }}
+    {{ partial "head/styling.html" . }}
+    {{ partial "head/sharing.html" . }}
   </head>
   <body>
     {{ block "page" . }}{{ end }}
