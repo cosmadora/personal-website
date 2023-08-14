@@ -12,7 +12,7 @@ steps:
 
   deploy-staging:
     # image: node:alpine
-    image: code.lila.network/lauralani/netlify-cli:latest
+    image: lauralani/netlify-cli:latest
     pull: true
     when:
       - event: push
@@ -27,7 +27,7 @@ steps:
 
   deploy-production:
     # image: node:alpine
-    image: code.lila.network/lauralani/netlify-cli:latest
+    image: lauralani/netlify-cli:latest
     pull: true
     when:
       - event: push
