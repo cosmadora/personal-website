@@ -11,7 +11,9 @@ steps:
       - hugo --minify --destination ./public
 
   deploy-staging:
-    image: node:alpine
+    # image: node:alpine
+    image: code.lila.network/lauralani/netlify-cli:latest
+    pull: true
     when:
       - event: push
         branch: staging
@@ -19,12 +21,14 @@ steps:
       - NETLIFY_AUTH_TOKEN
       - NETLIFY_SITE_ID
     commands:
-      - npm install netlify-cli -g
+      # - npm install netlify-cli -g
       - netlify deploy --alias stage --dir ./public
 
 
   deploy-production:
-    image: node:alpine
+    # image: node:alpine
+    image: code.lila.network/lauralani/netlify-cli:latest
+    pull: true
     when:
       - event: push
         branch: main
@@ -32,5 +36,5 @@ steps:
       - NETLIFY_AUTH_TOKEN
       - NETLIFY_SITE_ID
     commands:
-      - npm install netlify-cli -g
+      # - npm install netlify-cli -g
       - netlify deploy --prod --dir ./public
