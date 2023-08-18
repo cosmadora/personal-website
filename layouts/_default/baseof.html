@@ -3,6 +3,7 @@
   <head>
     <title>{{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{ .CurrentSection.Title }}{{ end }}</title>
     {{ partial "head/defaults.html" . }}
+    {{ partial "head/favicon.html" . }}
     {{ partial "head/styling.html" . }}
     {{ partial "head/sharing.html" . }}
   </head>
