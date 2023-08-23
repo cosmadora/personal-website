@@ -32,16 +32,17 @@ My list of awesome technologies I want to implement soon:
 - [Garage](https://garagehq.deuxfleurs.fr/): A S3-compatible storage (for selfhosting static websites like this one)
 
 ## Books
-I always loved to read as many books as I can. So here I'm listing the books I've read since I started this webpage, 
-including a rating and short description. These are the last few books I've rated:
+I always loved to read as many books as I can. So here I'm listing the books I've read since I
+started this webpage, including a rating and short description. These are the last few books 
+I've rated:
 
-Soon
+Coming Soon
 
 ## Contact
 Some ways to contact me:
-- {{< fediverse-handle >}}
-- mail (at) (this domain) [(PGP and S/MIME Keys)](/encryption)
-- matrix: @lauralani:matrix.org or @lauralani:lila.network
+- Fediverse: {{< fediverse-handle >}}
+- Email: mail (at) (this domain) [(PGP and S/MIME Keys)](/encryption/)
+- matrix: [@lauralani:lila.network](https://matrix.to/#/@lauralani:lila.network)
 - [LinkedIn](https://www.linkedin.com/in/laura-kalb/)
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 
