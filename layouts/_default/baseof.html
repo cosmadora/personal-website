@@ -8,6 +8,8 @@
     {{ partial "head/sharing.html" . }}
   </head>
   <body>
+    {{ partial "body/nav.html" . }}
+
     {{ block "page" . }}{{ end }}
   </body>
 </html>

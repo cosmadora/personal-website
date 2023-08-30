@@ -1,7 +1,9 @@
 {{ define "page" }}
 <article class="container">
-  <a href="javascript:history.back()">⇠ go back</a>
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <content>
+    <h1>{{ .Title }}</h1>
+    <br/>
+    {{ .Content }}
+  </content>
 </article>
 {{ end }}

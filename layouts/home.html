@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <h1>{{ .Site.Title }}</h1>
-  {{ .Content }}
+  {{ partial "body/nav.html" . }}
+  <content>
+    {{ .Content }}
+  </content>
 </body>
 
 </html>

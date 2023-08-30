@@ -1,0 +1,15 @@
+<nav>
+  <div class="hero-text float-left"><a href="/" class="nav-link special">{{ .Site.Title }}</a></div>
+  <div class="float-right">
+    {{ $currentPage := . }}
+    {{- range site.Menus.main -}}
+      {{- $menu_item_url := .URL -}}
+      {{- $page_url:= $currentPage.RelPermalink -}}
+      {{- if eq $menu_item_url $page_url -}}
+        <a href="{{ .URL }}" class="disabled" aria-current="page">{{ .Name }}</a>
+      {{- else -}}
+        <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+      {{- end -}}
+    {{- end }}
+  </div>
+</nav>

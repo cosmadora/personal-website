@@ -14,7 +14,8 @@ $min-device-width: 940px;
 	src: url('/fonts/open-sans-v35-latin-regular.woff2') format('woff2');
 }
 
-a {
+
+content a {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -35,7 +36,7 @@ body {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: $main-font-family;
-	font-size: 130%;
+	font-size: 1.4em;
 	line-height: 1.4;
 	margin: 1em auto;
 	max-width: 45em;
@@ -43,16 +44,18 @@ body {
 	color: $body-font-color;
 }
 
-h1 {
+content h1 {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font: inherit;
+	font-size: 1.5em;
 	vertical-align: baseline;
 	line-height: 100%;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
+	/*
 
 	&:before {
 		content: "# ";
@@ -64,9 +67,10 @@ h1 {
 		content: "-----" / "";
 		display: block;
 	}
+	*/
 }
 
-h2 {
+content h2 {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -83,7 +87,7 @@ h2 {
 	}
 }
 
-h3 {
+content h3 {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -108,15 +112,18 @@ html {
 	vertical-align: baseline;
 }
 
-li {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	vertical-align: baseline;
+content {
+	li {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		padding-left: 10px;
+		font: inherit;
+		vertical-align: baseline;
+	}
 }
 
-p {
+content p {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -131,7 +138,7 @@ p {
 	}
 }
 
-span {
+content span {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -139,7 +146,7 @@ span {
 	vertical-align: baseline;
 }
 
-strong {
+content strong {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -159,7 +166,7 @@ strong {
 	}
 }
 
-u {
+content u {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -167,7 +174,7 @@ u {
 	vertical-align: baseline;
 }
 
-ul {
+content ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -185,15 +192,26 @@ ul {
 	}
 }
 
-code {
+content code {
 	font: unset;
 	font-family: $main-font-family;
 	color: $code-font-color;
 }
 
-.special {
+content .special {
 	color: $special-font-color;
 	font-style: normal;
+}
+
+a.disabled {
+	pointer-events: none;
+	text-decoration: none;
+	color: #d66388;
+	padding-left: 15px;
+
+	:hover {
+		text-decoration: none;
+	}
 }
 
 @media (max-width: $min-device-width) {
@@ -202,11 +220,89 @@ code {
 		line-break: normal;
 	}
 
-	a {
+	content a {
 		line-break: loose;
 	}
 
-	code {
+	content code {
 		line-break: anywhere;
+	}
+
+	nav {
+		.hero-text {
+			text-align: center !important;
+			font-weight: bold;
+		}
+
+		.float-right,
+		.float-left {
+			float: none !important;
+			margin: 0;
+
+			a {
+				text-align: center;
+				margin: 0;
+			}
+		}
+
+		a {
+			float: none;
+			display: block;
+			text-align: left;
+
+			.nav-right {
+				float: none;
+			}
+		}
+	}
+}
+
+nav {
+	font-size: 1.2em;
+	overflow: hidden;
+	border-bottom: 1px solid $body-font-color;
+	margin-bottom: 30px;
+	padding: 0 10px 10px;
+
+	div {
+		margin-left: 15px;
+	}
+
+	a {
+		padding: 0;
+		border: 0;
+		font: inherit;
+	}
+
+	.nav-link {
+		padding-left: 15px;
+		text-decoration: none;
+		color: $link-font-color;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.float-right {
+		float: right;
+	}
+
+	.float-left {
+		float: left;
+	}
+
+	.hero-text {
+		font-size: 1.5em;
+		margin: 0;
+		padding: 0;
+		font: inherit;
+		text-decoration: none;
+
+		a {
+			color: $special-font-color;
+			font-weight: 800;
+			padding-left: 0;
+		}
 	}
 }

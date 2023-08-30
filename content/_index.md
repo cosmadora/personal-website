@@ -1,5 +1,5 @@
 ---
-date: 2023-08-07T08:58:15+02:00
+date: 2023-08-30T16:58:15+02:00
 ---
 
 Hi, my name is `Laura Kalb` and I (literally) do things on the internet.
@@ -11,25 +11,14 @@ reliability engineer. Now I'm responsible for the network infrastructure at a bi
 primarily working on network automation and our internal network infrastructure, and I'm playing a lot with the Golang
 programming language =).
 
+You can find a list of projects that I've already worked on [in my Portfolio](/portfolio).
+
 
 ## Some nice stuff
 A list of **tools**, **projects** and **fun stuff** that I already 
-have worked on or that I want to work on in the future.
+have worked on or that I want to work on in the future:
 
-- [A list of awesome stuff curated by me!](/interesting-stuff)
-- building my own IPAM with [Go](https://go.dev/). Source: [https://codeberg.org/lauralani/ipam](https://codeberg.org/lauralani/ipam)
-- My own URL Shortener with Go. Source: [https://codeberg.org/lauralani/go-urlsh](https://codeberg.org/lauralani/go-urlsh)
-- hosting my own mail with [mailcow](https://mailcow.email/)
-- managing my public domains via Infrastructure as Code with Git, CI/CD and [OctoDNS](https://github.com/octodns/octodns)
-- wrote my own [DynDNS-Tool](https://codeberg.org/lauralani/dyndns-script) in Python (supports Azure DNS and OVH)
-- Automated my home WIFI with radius assigned VLANs via Freeradius and custom frontend (Will be open sourced soon)
-- Some minor other projects:
-    - [OVH ApiKey Manager](https://codeberg.org/lauralani/ovh-apikey-manager)
-
-
-Notepad
-My list of awesome technologies I want to implement soon:
-- [Garage](https://garagehq.deuxfleurs.fr/): A S3-compatible storage (for selfhosting static websites like this one)
+[A list of awesome stuff curated by me!](/interesting-stuff)
 
 ## Books
 I always loved to read as many books as I can. So here I'm listing the books I've read since I
@@ -55,4 +44,4 @@ This page was last updated at {{< last-updated >}}
   
 Copyright (c) Laura Kalb 2021-{{< copyright-date >}}
 
-[Impressum und Datenschutzerklärung](/impressum.html)
+[Impressum und Datenschutzerklärung](/impressum)
