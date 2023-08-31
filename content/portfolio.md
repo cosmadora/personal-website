@@ -21,7 +21,7 @@ Source: [https://codeberg.org/lauralani/humble-bot](https://codeberg.org/laurala
 A Go Fediverse Bot that posts new [Humble Bundles](https://humblebundle.com)
 
 ## erisi
-project idea: [Erisi](/erisi/)
+[project idea: erisi](/projects/erisi/)
 
 `erisi` is planned to be a self-hosted alternative to Netlify/Vercel/Github Pages/etc... written in Go and utilizing [Caddy](https://caddyserver.com) and it's ACME capabilities.
 
