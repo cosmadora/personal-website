@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {{ partial "head/meta.html" . }}
     <title>{{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{ .CurrentSection.Title }}{{ end }}</title>
-    {{ partial "head/defaults.html" . }}
     {{ partial "head/favicon.html" . }}
     {{ partial "head/styling.html" . }}
-    {{ partial "head/meta.html" . }}
   </head>
   <body>
     {{ partial "body/nav.html" . }}
