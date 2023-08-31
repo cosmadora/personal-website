@@ -1,5 +1,6 @@
 ---
 date: 2023-08-08 12:20:00+02:00
+title: "Gefunden / Found"
 ---
 
 ## 🇩🇪 German
@@ -9,7 +10,7 @@ Vielen Dank ♥
 
 
 ## 🇬🇧/🇺🇸 English
-Hi! It looke like you found a lost item of mine!  
+Hi! It looks like you found a lost item of mine!  
 Please contact me via one of the ways described below!  
 Thank you ♥
 
@@ -19,8 +20,8 @@ Thank you ♥
 _Telefon/Phone:_ +49 172 2585130  
 _Email:_ mail@lauka.net  
 _Discord:_ @lauralani  
-_Fediverse:_ @lauralani@lila.network  
-_Matrix:_ @lauralani:lila.network
+_Fediverse:_ [@lauralani@lila.network](https://social.lila.network/@lauralani)  
+_Matrix:_ [@lauralani:lila.network](https://matrix.to/#/@lauralani:lila.network)  
 
 ## Info
 Diese Seite wurde zuletzt geändert am / This page was last updated at:  

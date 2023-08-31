@@ -29,7 +29,7 @@ project idea: [Erisi](/erisi/)
 ### ovh-apikey-manager
 Source: [https://codeberg.org/lauralani/ovh-apikey-manager](https://codeberg.org/lauralani/ovh-apikey-manager)
 
-Tiny CLI tool to manage OVH APi Keys
+Tiny CLI tool to manage OVH API Keys
 
 ### dyndns-script
 Source: [https://codeberg.org/lauralani/dyndns-script](https://codeberg.org/lauralani/dyndns-script)

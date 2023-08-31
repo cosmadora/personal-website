@@ -1,7 +1,8 @@
-$body-font-color: #c1c1c1;
-$link-font-color: #00cccc;
-$heading-font-color: #d66388;
-$code-font-color: cornflowerblue;
+$body-font-color: #d3d3d3;
+$background-color: #212121;
+$link-font-color: #1492FF;
+$heading-font-color: #FF85B8;
+$code-font-color: #a4c0f4;
 $special-font-color: #c2f486;
 $main-font-family: 'Open Sans', sans-serif;
 $min-device-width: 940px;
@@ -15,7 +16,7 @@ $min-device-width: 940px;
 }
 
 
-content a {
+a {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -40,7 +41,7 @@ body {
 	line-height: 1.4;
 	margin: 1em auto;
 	max-width: 45em;
-	background: #303030;
+	background: $background-color;
 	color: $body-font-color;
 }
 
@@ -121,6 +122,11 @@ content {
 		font: inherit;
 		vertical-align: baseline;
 	}
+
+	em {
+		font-style: italic;
+		color: #c2f486;
+	}
 }
 
 content p {
@@ -154,16 +160,6 @@ content strong {
 	vertical-align: baseline;
 	font-weight: 700;
 	color: $heading-font-color;
-
-	&:before {
-		content: "*";
-		content: "*" / "";
-	}
-
-	&:after {
-		content: "*";
-		content: "*" / "";
-	}
 }
 
 content u {
@@ -304,5 +300,12 @@ nav {
 			font-weight: 800;
 			padding-left: 0;
 		}
+	}
+}
+
+footer {
+	overflow: hidden;
+	> div {
+		float: left;
 	}
 }
