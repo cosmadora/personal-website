@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {{ partial "head/meta.html" . }}
-    <title>{{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{ .CurrentSection.Title }}{{ end }}</title>
+    <title>{{ or .Title .Site.Title }}</title>
     {{ partial "head/favicon.html" . }}
     {{ partial "head/styling.html" . }}
   </head>
