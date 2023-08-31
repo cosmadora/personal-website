@@ -1,6 +1,7 @@
-baseURL: http://example.org/
+baseURL: https://www.lauka.net/
 languageCode: en-us
 title: Lauras Website <3
+enableGitInfo: true
 params:
   description: "Lauras personal website and portfolio 💖"
 
