@@ -1,6 +1,7 @@
 ---
 date: 2023-08-08 12:20:00+02:00
 title: "Gefunden / Found"
+description: "Page showing how to contact Laura in case you've found something of hers"
 ---
 
 ## 🇩🇪 German

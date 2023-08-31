@@ -1,0 +1,4 @@
+{{ $summary := or .Page.Params.Description .Site.Params.Description }}
+<meta property="og:description" content="{{ $summary }}">
+<meta name="description" content="{{ $summary }}">
+{{ hugo.Generator }}

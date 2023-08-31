@@ -1,5 +1,6 @@
 ---
 title: Sprachtherapie
+description: "Eine Beschreibung der von Laura gelernten Prinzipien in der transgender mtf Sprachtherapie"
 ---
 
 ## Ziel

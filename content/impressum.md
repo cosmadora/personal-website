@@ -1,5 +1,6 @@
 ---
 title: Impressum und Datenschutzerklärung
+description: Impressum und Datenschutzerklärung
 ---
 ## Impressum
 

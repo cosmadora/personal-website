@@ -1,5 +1,6 @@
 ---
 title: "Erisi: A self-hosted static site server"
+description: "Project outline page for erisi. erisi is planned to be a self-hosted alternative to Netlify/Vercel/Github Pages/etc... written in Go and utilizing Caddy and it's ACME capabilities."
 ---
 
 ## Summary

@@ -1,6 +1,8 @@
 baseURL: http://example.org/
 languageCode: en-us
 title: Lauras Website <3
+params:
+  description: "Lauras personal website and portfolio 💖"
 
 menu:
   main:
@@ -10,3 +12,4 @@ menu:
     - name: Interesting Stuff
       pageRef: /interesting-stuff
       weight: 3
+

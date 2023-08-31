@@ -1,6 +1,7 @@
 ---
 title: "Lauras SMIME and GPG Keys"
 date: 2023-06-23T10:02:23+02:00
+description: "Overview of Lauras GPG and SMIME encryption keys"
 ---
 
 Last updated: `{{< last-updated >}}`
