@@ -7,10 +7,13 @@ params:
 
 menu:
   main:
+    - name: Blog
+      pageRef: /blog
+      weight: 1
     - name: Portfolio
       pageRef: /portfolio
       weight: 2
-    - name: Interesting Stuff
-      pageRef: /interesting-stuff
+    - name: Projects
+      pageRef: /projects
       weight: 3
 
