@@ -4,7 +4,7 @@
   <p>{{ .Content }}</p>
   {{ range .Pages }}
     <div class="section-page-item">
-        <h2>{{ .Title }}</h2>
+        <h3>{{ .Title }}</h3>
         <time>{{ .PublishDate | time.Format ":date_medium" }}</time>
         <div class="summary">{{ .Summary }}</div>
         <a href="{{ .RelPermalink }}">Read more &rarr;</a>
