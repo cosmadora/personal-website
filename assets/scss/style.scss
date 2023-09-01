@@ -41,7 +41,6 @@ a {
 }
 
 body {
-	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
@@ -54,54 +53,42 @@ body {
 	color: $body-font-color;
 }
 
-content h1 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-family: $heading-font-family;
-	font-size: 1.6em;
-	vertical-align: baseline;
-	line-height: 100%;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-	color: $heading-font-color;
-}
-
-content h2 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 1.4em;
-	font-family: $heading-font-family;
-	vertical-align: baseline;
-	line-height: 100%;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-	color: $heading-font-color;
-}
-
-content h3 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-family: $heading-font-family;
-	font-size: 1.2em;
-	vertical-align: baseline;
-	line-height: 100%;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-	color: $heading-font-color;
-
-}
-
-html {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-
 content {
+
+	h1,
+	h2,
+	h3 {
+		padding: 0;
+		border: 0;
+		font-family: $heading-font-family;
+		font-weight: 400;
+		vertical-align: baseline;
+		line-height: 100%;
+		color: $heading-font-color;
+	}
+
+	h1 {
+		font-size: 1.6em;
+		margin: 2rem 0 1rem;
+	}
+
+	h2 {
+		font-size: 1.4em;
+		margin: 2rem 0 1rem;
+	}
+
+	h3 {
+		font-size: 1.2em;
+		margin: 2rem 0 0.2em;
+	}
+
+	html {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+
 	li {
 		margin: 0;
 		padding: 0;
@@ -114,75 +101,75 @@ content {
 		font-style: italic;
 		color: #c2f486;
 	}
-}
 
-content p {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	margin-bottom: .75rem;
+	p {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+		margin-bottom: .75rem;
 
-	>code {
+		>code {
+			font: unset;
+			font-family: $main-font-family;
+			color: $code-font-color;
+		}
+	}
+
+	span {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+
+	strong {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+		font-weight: 700;
+		color: $heading-font-color;
+	}
+
+	u {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+		list-style-type: none;
+		margin-left: 1rem;
+
+		>li {
+			&:before {
+				content: "-";
+				position: absolute;
+				margin-left: -1.1rem;
+			}
+		}
+	}
+
+	code {
 		font: unset;
 		font-family: $main-font-family;
 		color: $code-font-color;
 	}
-}
 
-content span {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-
-content strong {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	font-weight: 700;
-	color: $heading-font-color;
-}
-
-content u {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-
-content ul {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	list-style-type: none;
-	margin-left: 1rem;
-
-	>li {
-		&:before {
-			content: "-";
-			position: absolute;
-			margin-left: -1.1rem;
-		}
+	.special {
+		color: $special-font-color;
+		font-style: normal;
 	}
-}
 
-content code {
-	font: unset;
-	font-family: $main-font-family;
-	color: $code-font-color;
-}
-
-content .special {
-	color: $special-font-color;
-	font-style: normal;
-}
-
-content pre>code {
-	font-family: monospace;
+	pre>code {
+		font-family: monospace;
+	}
 }
 
 a.disabled {
@@ -223,7 +210,6 @@ a.disabled {
 
 		.hero-text {
 			text-align: center !important;
-			font-weight: bold;
 		}
 
 		.float-right,
@@ -293,7 +279,6 @@ nav {
 
 		a {
 			color: $special-font-color;
-			font-weight: 800;
 			padding-left: 0;
 		}
 	}
