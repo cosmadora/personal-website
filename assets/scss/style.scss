@@ -1,10 +1,12 @@
-$body-font-color: #d3d3d3;
+$body-font-color: #ffffff;
+/* old: #d3d3d3 */
 $background-color: #212121;
 $link-font-color: #1492FF;
 $heading-font-color: #FF85B8;
 $code-font-color: #a4c0f4;
 $special-font-color: #c2f486;
 $main-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Kreon', serif;
 $min-device-width: 940px;
 
 @font-face {
@@ -15,12 +17,20 @@ $min-device-width: 940px;
 	src: url('/fonts/open-sans-v35-latin-regular.woff2') format('woff2');
 }
 
+@font-face {
+	font-display: swap;
+	font-family: 'Kreon';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/kreon-v37-latin-regular.woff2') format('woff2');
+}
+
+
 
 a {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
 	color: $link-font-color;
@@ -34,7 +44,6 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	font-family: $main-font-family;
 	font-size: 1.4em;
@@ -49,67 +58,46 @@ content h1 {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
-	font-size: 1.5em;
+	font-family: $heading-font-family;
+	font-size: 1.6em;
 	vertical-align: baseline;
 	line-height: 100%;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
-	/*
-
-	&:before {
-		content: "# ";
-		content: "# " / "";
-	}
-
-	&:after {
-		content: "-----";
-		content: "-----" / "";
-		display: block;
-	}
-	*/
 }
 
 content h2 {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
+	font-size: 1.4em;
+	font-family: $heading-font-family;
 	vertical-align: baseline;
 	line-height: 100%;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
-
-	&:before {
-		content: "## ";
-		content: "## " / "";
-	}
 }
 
 content h3 {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
+	font-family: $heading-font-family;
+	font-size: 1.2em;
 	vertical-align: baseline;
 	line-height: 100%;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: $heading-font-color;
 
-	&:before {
-		content: "### ";
-		content: "### " / "";
-	}
 }
 
 html {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -119,7 +107,6 @@ content {
 		padding: 0;
 		border: 0;
 		padding-left: 10px;
-		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -133,7 +120,6 @@ content p {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	margin-bottom: .75rem;
 
@@ -148,7 +134,6 @@ content span {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -156,7 +141,6 @@ content strong {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	font-weight: 700;
 	color: $heading-font-color;
@@ -166,7 +150,6 @@ content u {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -174,7 +157,6 @@ content ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	list-style-type: none;
 	margin-left: 1rem;
@@ -197,6 +179,10 @@ content code {
 content .special {
 	color: $special-font-color;
 	font-style: normal;
+}
+
+content pre>code {
+	font-family: monospace;
 }
 
 a.disabled {
@@ -222,9 +208,19 @@ a.disabled {
 
 	content code {
 		line-break: anywhere;
+		overflow-wrap: anywhere;
+		word-wrap: break-word;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
 	}
 
 	nav {
+		font-family: $heading-font-family;
+		padding-bottom: 5px !important;
+
 		.hero-text {
 			text-align: center !important;
 			font-weight: bold;
@@ -233,7 +229,7 @@ a.disabled {
 		.float-right,
 		.float-left {
 			float: none !important;
-			margin: 0;
+			margin: 0 !important;
 
 			a {
 				text-align: center;
@@ -258,7 +254,8 @@ nav {
 	overflow: hidden;
 	border-bottom: 1px solid $body-font-color;
 	margin-bottom: 30px;
-	padding: 0 10px 10px;
+	padding: 0 10px;
+	font-family: $heading-font-family;
 
 	div {
 		margin-left: 15px;
@@ -267,7 +264,6 @@ nav {
 	a {
 		padding: 0;
 		border: 0;
-		font: inherit;
 	}
 
 	.nav-link {
@@ -282,6 +278,7 @@ nav {
 
 	.float-right {
 		float: right;
+		margin-top: 16px;
 	}
 
 	.float-left {
@@ -292,7 +289,6 @@ nav {
 		font-size: 1.5em;
 		margin: 0;
 		padding: 0;
-		font: inherit;
 		text-decoration: none;
 
 		a {
@@ -305,7 +301,15 @@ nav {
 
 footer {
 	overflow: hidden;
-	> div {
+
+	>div {
 		float: left;
+	}
+}
+
+.section-page-item {
+	>time {
+		color: gray;
+		font-size: 90%;
 	}
 }
