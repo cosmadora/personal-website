@@ -2,11 +2,18 @@
 <content>
   <h1>{{ .Title }}</h1>
   <p>{{ .Content }}</p>
+  <h2>Latest posts</h2>
   {{ range .Pages }}
     <div class="section-page-item">
         <h3>{{ .Title }}</h3>
         <div class="details">
           <time class="float-left">{{ .PublishDate | time.Format ":date_medium" }}</time>
+          {{- if .Site.Params.Display.ReadingTime -}}
+          <div class="read-time float-left"> &bull; {{ partial "reading-time.html" . }}</div>
+          {{- end -}}
+          {{- if and .Site.Params.Display.Author .Page.Params.Author -}}
+          <div class="author float-left"> &bull; by {{ .Page.Params.Author }}</div>
+          {{- end -}}
         </div>
         
         <div class="summary">{{ .Summary }}</div>

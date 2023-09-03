@@ -1,9 +1,13 @@
 baseURL: https://www.lauka.net/
 languageCode: en-us
-title: Lauras Website <3
+title: "Lauras Website <3"
 enableGitInfo: true
 params:
   description: "Lauras personal website and portfolio 💖"
+  display:
+    readingTime: true
+    author: true
+
 
 menu:
   main:
@@ -16,4 +20,3 @@ menu:
     - name: Projects
       pageRef: /projects
       weight: 3
-

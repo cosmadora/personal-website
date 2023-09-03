@@ -25,7 +25,9 @@ $min-device-width: 940px;
 	src: url('/fonts/kreon-v37-latin-regular.woff2') format('woff2');
 }
 
-
+.float-left {
+	float: left;
+}
 
 a {
 	margin: 0;
@@ -266,10 +268,6 @@ nav {
 		margin-top: 16px;
 	}
 
-	.float-left {
-		float: left;
-	}
-
 	.hero-text {
 		font-size: 1.5em;
 		margin: 0;
@@ -285,15 +283,16 @@ nav {
 
 footer {
 	overflow: hidden;
-
-	>div {
-		float: left;
-	}
 }
 
 .section-page-item {
-	>time {
+	>.details {
 		color: gray;
 		font-size: 90%;
+		overflow: hidden;
+
+		>div {
+			white-space: pre;
+		}
 	}
 }

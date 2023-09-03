@@ -1,0 +1,12 @@
+{{ define "page" }}
+<content>
+  <h1>{{ .Title }}</h1>
+  {{ range .Site.Sections }}
+    <div class="section-page-item">
+        <h2>{{ .Title }}</a></h2>
+        <div class="summary">{{ or .Params.Description .Summary }}</div>
+        <a href="{{ .RelPermalink }}">Read more</a>
+    </div>
+  {{ end }}
+</content>
+{{ end }}

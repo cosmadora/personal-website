@@ -1,7 +1,5 @@
 ---
 title: My Blog 🌸  
-description: "Lauras Blog"
+description: "Lauras Blog about random stuff :3"
 ---
 I'll be posting about random stuff here :3 IT, Politics, Love...
-
-## Latest posts 
