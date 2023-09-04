@@ -2,8 +2,17 @@
 <html lang="en">
 
 <head>
-  {{ partial "head/meta.html" . }}
-  <title>{{ or .Title .Site.Title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Laura Kalb">
+  <meta property="og:title" content="Lauras Website">
+  <meta property="og:image" content="/android-chrome-512x512.png">
+  <meta property="og:description" content="404: Page not found">
+  <meta name="description" content="404: Page not found">
+  <meta name="robots" content="noindex">
+  {{ hugo.Generator }}
+
+  <title>404 Not Found</title>
   {{ partial "head/favicon.html" . }}
   {{ partial "head/styling.html" . }}
   <style>
