@@ -5,6 +5,7 @@ date: 2023-08-30T06:58:15+02:00
 Hi, my name is **Laura Kalb** and I (literally) do things on the internet.
 
 ## About me
+![Portrait of Laura](/images/portrait.webp)
 I'm a network engineer, with a pretty mixed technical background. I started my career in software
 development, and then moved on to be a sysadmin with main emphasis on linux environments. 
 Afterwards, I was a mix of network engineer and site reliability engineer. I switched to managing

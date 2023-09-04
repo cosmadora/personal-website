@@ -172,6 +172,13 @@ content {
 	pre>code {
 		font-family: monospace;
 	}
+
+	img {
+		max-height: 10em;
+		border-radius: 25%;
+		float: right;
+		margin-left: 1em;
+	}
 }
 
 a.disabled {
