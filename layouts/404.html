@@ -2,86 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-        content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My little cozy place on the web.">
-    <title>404 Not Found - lauka.net</title>
-    <link rel="author" href="humans.txt" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!--<link rel='stylesheet' type='text/css' media='screen' href="css/style.css" />-->
-    <style>
-        body {
-            font-family: Consolas, monaco, monospace;
-            font-size: 130%;
-            line-height: 1.4;
-            background: #303030;
-            color: #c1c1c1;
-            cursor: default;
-        }
-        
-        a {
-            color: #fff;
-        }
-        
-        .code-area {
-            position: absolute;
-            width: 320px;
-            min-width: 320px;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        
-        .code-area > span {
-            display: block;
-        }
-        
-        @media screen and (max-width: 320px) {
-            .code-area {
-                font-size: 5vw;
-                min-width: auto;
-                width: 95%;
-                margin: auto;
-                padding: 5px;
-                padding-left: 10px;
-                line-height: 6.5vw;
-            }
-        }
-    </style>
+  {{ partial "head/meta.html" . }}
+  <title>{{ or .Title .Site.Title }}</title>
+  {{ partial "head/favicon.html" . }}
+  {{ partial "head/styling.html" . }}
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
+      font-family: Tahoma, sans-serif;
+      font-size: 1em;
+      line-height: 1.4;
+      margin: 1em auto;
+      max-width: 45em;
+      background: #212121;
+      color: #fff;
+      font-weight: 200
+    }
+
+    a {
+      text-decoration: none;
+      color: #1492ff
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-weight: 200;
+      text-align: center;
+      margin-bottom: 0
+    }
+
+    p {
+      margin-top: 0
+    }
+
+    img {
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .content {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="code-area">
-        <span style="color: #777;font-style:italic;">
-          // 404 page not found.
-        </span>
-        <span>
-          <span style="color:#d65562;">
-            if
-          </span>
-            (<span style="color:#4ca8ef;">!</span><span style="font-style: italic;color:#bdbdbd;">found</span>)
-          {
-        </span>
-        <span>
-          <span style="padding-left: 15px;color:#2796ec">
-             <i style="width: 10px;display:inline-block"></i>throw
-          </span>
-          <span>
-            (<span style="color: #a6a61f">"404 Not Found"</span>);
-            <!-- 
-                (<span style="color: #a6a61f">"(╯°□°)╯︵ ┻━┻"</span>); 
-            -->
-          </span>
-            <span style="display:block">}</span>
-            <span style="color: #777;font-style:italic;">
-                // <a href="/">Go home!</a>
-            </span>
-        </span>
-      </div>
+  <div class="content">
+    <img
+      src="data:image/webp;base64,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"
+      height="300">
+    <div class="center">
+      <h1>Oops, looks like someone ate the page!?</h1>
+      <p>Unfortunately the page you tried to access doesn't exist.
+        </br>
+        You can try to <a href="window.history.back()">go back</a> or <a href="/">go home<a /> ;)</p>
+    </div>
+  </div>
 </body>
+
 </html>
