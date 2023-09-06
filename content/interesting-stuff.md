@@ -39,6 +39,9 @@ A list of cool things, curated by me 🌠
 - [https://themes.gohugo.io/themes/hugo-flex/](https://themes.gohugo.io/themes/hugo-flex/): Simple Website template
 - [A4 Resume](https://themes.gohugo.io/themes/resume-a4/): Resume Template
 
+## IAM
+- [WitchAuth](https://codeberg.org/cyberwitch/witchauth) tries to empower small communities and groups to have an identity provider for easy management and better security through SSO.
+
 ## Mail
 - [aerc](https://sr.ht/~rjarry/aerc) is an email client for your terminal
 
