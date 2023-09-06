@@ -3,6 +3,7 @@ title: "Issues with Docker Swarm on ESXi"
 description: "How to make Docker Swarm work with Nodes on ESXi"
 publishdate: "2021-04-20"
 author: "Laura 🌹"
+draft: true
 ---
 
 I once tried to set up a Docker Swarm Cluster. I had three nodes, two on Proxmox hosts, and one on a ESXi 7 host. The nodes had a GlusterFS storage attached to them which synced data to all three nodes so containers could be started on any node.

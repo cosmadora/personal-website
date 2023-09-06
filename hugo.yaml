@@ -11,9 +11,9 @@ params:
 
 menu:
   main:
-    - name: Blog
-      pageRef: /blog
-      weight: 1
+#    - name: Blog
+#      pageRef: /blog
+#      weight: 1
     - name: Portfolio
       pageRef: /portfolio
       weight: 2
