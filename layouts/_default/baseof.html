@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+{{ $language := or .Params.Language "en" }}
+<html lang="{{ $language }}">
   <head>
     {{ partial "head/meta.html" . }}
     <title>{{ or .Title .Site.Title }}</title>
