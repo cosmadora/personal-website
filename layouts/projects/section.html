@@ -1,0 +1,17 @@
+{{ define "page" }}
+<content>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  {{ range .Pages }}
+    <div class="section-page-item">
+        <h3>{{ .Title }}</h3>
+        <div class="details">
+          <time class="float-left">{{ .PublishDate | time.Format ":date_medium" }}</time>
+        </div>
+        
+        <div class="summary">{{ .Summary }}</div>
+        <a href="{{ .RelPermalink }}">Read more &rarr;</a>
+    </div>
+  {{ end }}
+</content>
+{{ end }}

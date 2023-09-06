@@ -28,3 +28,4 @@ hugo.linux
 *.vsix
 
 .DS_Store
+.vscode/
