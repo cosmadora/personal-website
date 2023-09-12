@@ -22,6 +22,7 @@ A list of cool things, curated by me 🌠
 - [Design tools and Tips for Developers in a Hurry](https://github.com/sw-yx/spark-joy)
 - [Halfmoon](https://www.gethalfmoon.com/docs/) Framework which Codeberg based its design on
 - [CSS Patterns](https://css-pattern.com/)
+- [Canadian design system](https://design.canada.ca) CSS Framework of the Canadian Government
 
 ## Fonts
 - [Comic Mono](https://dtinth.github.io/comic-mono-font/) Comic Sans in good, as a monospace font
