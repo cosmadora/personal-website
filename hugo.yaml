@@ -1,9 +1,9 @@
 baseURL: https://www.lauka.net/
 languageCode: en-us
-title: "Lauras Website <3"
+title: "Adoras Website <3"
 enableGitInfo: true
 params:
-  description: "Lauras personal website and portfolio 💖"
+  description: "Adoras personal website and portfolio 💖"
   display:
     readingTime: true
     author: true

@@ -1,6 +1,6 @@
 ---
 title: "Portfolio"
-description: "Lauras Software Development portfolio"
+description: "Adoras Software Development portfolio"
 ---
 
 Here you can find a list of projects I worked on:

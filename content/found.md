@@ -19,7 +19,7 @@ Thank you ♥
 ## ✉️ Kontaktwege / Ways to contact me
 
 _Telefon/Phone:_ +49 172 2585130  
-_Email:_ mail@lauka.net  
+_Email:_ laura@lila.network  
 _Discord:_ @lauralani  
 _Fediverse:_ [@lauralani@lila.network](https://social.lila.network/@lauralani)  
 _Matrix:_ [@lauralani:lila.network](https://matrix.to/#/@lauralani:lila.network)  

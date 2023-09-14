@@ -7,7 +7,7 @@ noindex: true
 
 _\[German law demands this\]_
 
-Laura Kalb  
+Adora Laura Kalb  
 Schulstr. 11  
 91334 Hemhofen  
 Kontakt: lauka (minus) website (at) lauka (punkt) net

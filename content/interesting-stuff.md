@@ -1,6 +1,6 @@
 ---
-title: "Lauras Interesting Stuff"
-description: "A list of interesting things curated by Laura 🌠"
+title: "Adoras Interesting Stuff"
+description: "A list of interesting things curated by Adora 🌠"
 ---
 A list of cool things, curated by me 🌠
 

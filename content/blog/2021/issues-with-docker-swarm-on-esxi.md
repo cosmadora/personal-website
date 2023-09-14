@@ -2,7 +2,7 @@
 title: "Issues with Docker Swarm on ESXi"
 description: "How to make Docker Swarm work with Nodes on ESXi"
 publishdate: "2021-04-20"
-author: "Laura 🌹"
+author: "Adora 🌹"
 draft: true
 ---
 
