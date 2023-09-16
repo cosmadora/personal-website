@@ -27,6 +27,7 @@ A list of cool things, curated by me 🌠
 ## Fonts
 - [Comic Mono](https://dtinth.github.io/comic-mono-font/) Comic Sans in good, as a monospace font
 - [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans) wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool
+- [B612 Font](https://b612-font.com/) B612 is an highly legible open source font family designed and tested to be used on aircraft cockpit screens.
 
 ## Hugo Themes
 - [https://adityatelange.github.io/hugo-PaperMod/](https://adityatelange.github.io/hugo-PaperMod/)
