@@ -50,3 +50,6 @@ A list of cool things, curated by me 🌠
 ## Misc
 - [yet-another-bench-script](https://github.com/masonr/yet-another-bench-script) Benchmarking script that tests Storage, Network speed and CPU
 - [endlessh](https://github.com/skeeto/endlessh) SSH tarpit
+
+### Games
+- [OpenRA](https://www.openra.net): Red Alert, Command & Conquer,  Dune 2000 rebuilt for the Modern Era. Open Source and free!
