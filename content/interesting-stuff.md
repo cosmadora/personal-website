@@ -54,6 +54,7 @@ A list of cool things, curated by me 🌠
 - [yet-another-bench-script](https://github.com/masonr/yet-another-bench-script) Benchmarking script that tests Storage, Network speed and CPU
 - [endlessh](https://github.com/skeeto/endlessh) SSH tarpit
 - [Byceps](https://byceps.nwsnet.de/) is a tool to prepare and operate LAN parties
+- [sli.dev](https://sli.dev/): Presentation Slides for Developers (with nodejs)
 
 ### Games
 - [OpenRA](https://www.openra.net): Red Alert, Command & Conquer,  Dune 2000 rebuilt for the Modern Era. Open Source and free!
