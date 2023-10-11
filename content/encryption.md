@@ -6,10 +6,18 @@ description: "Overview of Adoras GPG and SMIME encryption keys"
 
 Last updated: `{{< last-updated >}}`
 ## GPG Keys
+### adora@lila.network
+Links: 
+- [www.lauka.net](/certificates/gpg/adora@lila.network.asc)
+- [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/7064FF53CC28C232486E6187E2E0F82107536C1B)
+
+
+Fingerprint: `7064 FF53 CC28 C232 486E 6187 E2E0 F821 0753 6C1B`
+
 ### mail@lauka.net
 
 Links: 
-- [www.lauka.net](https://www.lauka.net/certificates/gpg/mail@lauka.net.asc)
+- [www.lauka.net](/certificates/gpg/mail@lauka.net.asc)
 - [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/AFB583D770414388D3C7D84E0BEBC883A64A806E)
 
 
@@ -19,7 +27,7 @@ Fingerprint: `AFB5 83D7 7041 4388 D3C7 D84E 0BEB C883 A64A 806E`
 ### laura@laurakalb.de
 
 Links: 
-- [www.lauka.net](https://www.lauka.net/certificates/gpg/laura@laurakalb.de.asc)
+- [www.lauka.net](/certificates/gpg/laura@laurakalb.de.asc)
 - [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/ABABDCBE322AD93D6F2577A45EEB5ED5B41E3C64)
 
 
@@ -30,7 +38,7 @@ Fingerprint: `ABAB DCBE 322A D93D 6F25 77A4 5EEB 5ED5 B41E 3C64`
 ### mail@lauka.net
 
 Links:
-- [www.lauka.net](https://www.lauka.net/certificates/smime/mail@lauka.net.crt)
+- [www.lauka.net](/certificates/smime/mail@lauka.net.crt)
 
 
 Fingerprint: 
@@ -41,7 +49,7 @@ Fingerprint:
 ### laura@laurakalb.de
 
 Links:
-- [www.lauka.net](https://www.lauka.net/certificates/smime/laura@laurakalb.de.crt)
+- [www.lauka.net](/certificates/smime/laura@laurakalb.de.crt)
 
 
 Fingerprint: 
