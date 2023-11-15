@@ -1,8 +1,9 @@
 steps:
   build:
-    image: golang:1.20-bookworm
+    image: golang:1.21-bookworm
     environment:
-      - HUGO_VERSION=0.117.0
+      - HUGO_VERSION=0.120.4
+      - TZ=Europe/Berlin
     when:
       - event: push
         branch: [main, staging] 
