@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/cv"
+  to = "https://cv.lauka.net"
+  status = 200
+
