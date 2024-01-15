@@ -32,7 +32,7 @@ Coming soon
 Some ways to contact me:
 - Fediverse: {{< fediverse-handle >}}
 - Email: `adora [at] lila [dot] network` [(PGP and S/MIME Keys)](/encryption/)
-- matrix: [@lauralani:lila.network](https://matrix.to/#/@lauralani:lila.network)
+- matrix: [@adora:catgirl.cloud](https://matrix.to/#/@adora:catgirl.cloud)
 - [LinkedIn](https://www.linkedin.com/in/laura-kalb/)
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 

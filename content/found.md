@@ -19,10 +19,10 @@ Thank you ♥
 ## ✉️ Kontaktwege / Ways to contact me
 
 _Telefon/Phone:_ +49 172 2585130  
-_Email:_ laura@lila.network  
+_Email:_ adora@lila.network  
 _Discord:_ @lauralani  
 _Fediverse:_ [@lauralani@lila.network](https://social.lila.network/@lauralani)  
-_Matrix:_ [@lauralani:lila.network](https://matrix.to/#/@lauralani:lila.network)  
+_Matrix:_ [@adora:catgirl.cloud](https://matrix.to/#/@adora:catgirl.cloud)  
 
 ## Info
 Diese Seite wurde zuletzt geändert am / This page was last updated at:  
