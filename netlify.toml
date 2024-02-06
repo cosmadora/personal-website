@@ -1,5 +1,9 @@
 [[redirects]]
-  from = "/cv"
+  from = "https://www.lauka.net/cv"
   to = "https://cv.lauka.net"
   status = 301
 
+[[redirects]]
+  from = "https://lauka.net/cv"
+  to = "https://cv.lauka.net"
+  status = 301
