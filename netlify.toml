@@ -7,3 +7,18 @@
   from = "https://lauka.net/cv"
   to = "https://cv.lauka.net"
   status = 301
+
+[[redirects]]
+  from = "https://www.lauka.net/*"
+  to = "https://adora.codes/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://lauka.net/*"
+  to = "https://adora.codes/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://personal-website-40cb76.netlify.app/*"
+  to = "https://adora.codes/"
+  status = 301
