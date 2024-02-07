@@ -1,39 +1,3 @@
-# CV Redirects
-
-[[redirects]]
-  from = "https://www.lauka.net/cv"
-  to = "https://cv.lauka.net"
-  status = 301
-
-[[redirects]]
-  from = "https://lauka.net/cv"
-  to = "https://cv.lauka.net"
-  status = 301
-
-# Base domain redirects with paths
-
-[[redirects]]
-  from = "https://www.lauka.net/*"
-  to = "https://adora.codes/:splat"
-  status = 301
-
-[[redirects]]
-  from = "https://lauka.net/*"
-  to = "https://adora.codes/:splat"
-  status = 301
-
-# Base domain redirects
-
-[[redirects]]
-  from = "https://www.lauka.net/"
-  to = "https://adora.codes/"
-  status = 301
-
-[[redirects]]
-  from = "https://lauka.net/"
-  to = "https://adora.codes/"
-  status = 301
-
 # Redirect netlify alias
 
 [[redirects]]
