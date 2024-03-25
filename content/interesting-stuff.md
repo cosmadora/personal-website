@@ -23,6 +23,8 @@ A list of cool things, curated by me 🌠
 - [Halfmoon](https://www.gethalfmoon.com/docs/) Framework which Codeberg based its design on
 - [CSS Patterns](https://css-pattern.com/)
 - [Canadian design system](https://design.canada.ca) CSS Framework of the Canadian Government
+- [magick.css: ](https://css.winterveil.net/) minimalistic, (mostly) classless CSS that isjust simple and beautiful.
+- [Bulma: ](https://bulma.io/) Stylish CSS framework I wish to use for some apps ^-^
 
 ## Fonts
 - [Comic Mono](https://dtinth.github.io/comic-mono-font/) Comic Sans in good, as a monospace font
