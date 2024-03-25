@@ -37,8 +37,8 @@ Some ways to contact me:
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 
 ## About this website
-This website is [open source](https://code.lila.network/lauralani/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted with Netlify.  
+This website is [open source](https://code.lila.network/lauralani/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted with Cloudflare.  
   
-This page makes due without any cookies, javascript frameworks, tracking and databases in the effort to make the web quick and usable again :)  
+This page makes due without any cookies, javascript frameworks and databases in the effort to make the web quick and usable again :)  
   
 This page was last updated at {{< last-updated >}}
