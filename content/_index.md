@@ -21,6 +21,9 @@ can find [ways to contact me below](#contact).
 A list of **tools**, **projects** and **fun stuff** that I already 
 have worked on or that I want to work on in the future: [A list of awesome stuff curated by me!](/interesting-stuff)
 
+I also host public services:
+- a publicy available Stratum 2 NTP Server: `ntp1.adora.codes`
+
 ## Books
 I always loved to read as many books as I can. So here I'm listing the books I've read since I
 started this webpage, including a rating and short description. These are the last few books 
