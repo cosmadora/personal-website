@@ -1,0 +1,23 @@
+baseURL = "https://adora.codes/"
+languageCode = "en-us"
+title = "Adoras Website <3"
+enableGitInfo = true
+
+[params]
+description = "Adoras personal website and portfolio 💖"
+author = "Adora Laura Kalb"
+meta_title = "Adoras Website"
+
+  [params.display]
+  readingTime = true
+  author = true
+
+[[menu.main]]
+name = "Portfolio"
+pageRef = "/portfolio"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+pageRef = "/projects"
+weight = 3
