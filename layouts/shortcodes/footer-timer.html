@@ -1,4 +1,4 @@
-^-^ <a id="inconspicuous-timer-a" href="/images/curious_cat.jpg" ><i id="inconspicuous-timer"></i></a>
+^-^ <a id="inconspicuous-timer-a" href="/images/secret.jpg" ><i id="inconspicuous-timer"></i></a>
 
 <script>
     // Set the date we're counting up from
@@ -17,13 +17,12 @@
         var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         var text = ""
         if (years != 0) {
-            text = years + "y " + days + "d " + hours + "h " + minutes + "m " + seconds + "s"
+            text = years + "y " + days + "d " + hours + "h " + minutes + "m "
         } else {
-            text = days + "d " + hours + "h " + minutes + "m " + seconds + "s"
+            text = days + "d " + hours + "h " + minutes + "m "
         }
         timerElement.innerHTML = text;
     }
