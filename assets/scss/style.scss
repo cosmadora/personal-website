@@ -304,3 +304,14 @@ footer {
 		}
 	}
 }
+
+#inconspicuous-timer-a > i {
+	color: $body-font-color;
+	text-decoration: none;
+	font-style: normal !important;
+	
+}
+
+#inconspicuous-timer-a > i:hover {
+	text-decoration: underline $background-color;	
+}

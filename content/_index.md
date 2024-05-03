@@ -45,3 +45,6 @@ This website is [open source](https://code.lila.network/lauralani/personal-websi
 This page makes due without any cookies, javascript frameworks and databases in the effort to make the web quick and usable again :)  
   
 This page was last updated at {{< last-updated >}}
+
+
+{{< footer-timer >}}
