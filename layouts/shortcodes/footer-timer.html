@@ -1,32 +1,64 @@
-^-^ <a id="inconspicuous-timer-a" href="/images/secret.jpg" ><i id="inconspicuous-timer"></i></a>
+^-^ <a id="inconspicuous-timer-a" href="/images/secret.jpg"><i id="inconspicuous-timer"></i></a>
 
 <script>
+
+    function getTimeSince(dateString) {
+        // Parse the input date string into a Date object
+        const startDate = new Date(dateString);
+
+        // Get the current date
+        const currentDate = new Date();
+
+        // Calculate the differences in each unit
+        let years = currentDate.getFullYear() - startDate.getFullYear();
+        let months = currentDate.getMonth() - startDate.getMonth();
+        let days = currentDate.getDate() - startDate.getDate();
+        let hours = currentDate.getHours() - startDate.getHours();
+        let minutes = currentDate.getMinutes() - startDate.getMinutes();
+
+        // Adjust for negative month difference
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        // Adjust for negative day difference
+        if (days < 0) {
+            months--;
+            let prevMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+            days += prevMonth;
+        }
+
+        // Adjust for negative hour difference
+        if (hours < 0) {
+            days--;
+            hours += 24;
+        }
+
+        // Adjust for negative minute difference
+        if (minutes < 0) {
+            hours--;
+            minutes += 60;
+        }
+
+        return {
+            years: years,
+            months: months,
+            days: days,
+            hours: hours,
+            minutes: minutes
+        };
+    }
     // Set the date we're counting up from
-    const countUpDate = new Date("Dec 28, 2023 12:34:56").getTime();
-    const timerElement = document.getElementById("inconspicuous-timer")
+    const startDate = new Date("Dec 28, 2023 16:34:56");
 
     function updateHtml() {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count up date
-        var distance = now - countUpDate;
-
-        // Time calculations for days, hours, minutes and seconds
-        var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
-        var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-        var text = ""
-        if (years != 0) {
-            text = years + "y " + days + "d " + hours + "h " + minutes + "m "
-        } else {
-            text = days + "d " + hours + "h " + minutes + "m "
-        }
-        timerElement.innerHTML = text;
+        const result = getTimeSince("Dec 28, 2023 16:34:56");
+        const timerElement = document.getElementById("inconspicuous-timer")
+        timerElement.innerHTML = `${result.years}y ${result.months}m ${result.days}d ${result.hours}h ${result.minutes}min`;
     }
+
     updateHtml()
 
-    var x = setInterval(updateHtml, 1000);
+    var x = setInterval(updateHtml, 10000);
 </script>
