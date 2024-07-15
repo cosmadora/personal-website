@@ -3,7 +3,7 @@ when:
     branch: [main, staging] 
 
 variables:
-  - &SSH_PORT "2003"
+  - &SSH_PORT '2003'
 
 steps:
   build:
@@ -24,8 +24,8 @@ steps:
       - RSYNC_TARGET_SERVER
       - RSYNC_TARGET_USER
     environment:
-      - TARGET_PATH=/webroot/adora.codes
-      - *SSH_PORT
+      TARGET_PATH: /webroot/adora.codes
+      RSYNC_TARGET_PORT: *SSH_PORT
     commands:
       - apk add --update --no-cache openssh rsync git
       - mkdir -p $HOME/.ssh
@@ -43,8 +43,8 @@ steps:
       - RSYNC_TARGET_SERVER
       - RSYNC_TARGET_USER
     environment:
-      - TARGET_PATH=/webroot/www-staging.adora.codes
-      - *SSH_PORT
+      TARGET_PATH: /webroot/adora.codes
+      RSYNC_TARGET_PORT: *SSH_PORT
     commands:
       - apk add --update --no-cache openssh rsync git
       - mkdir -p $HOME/.ssh
