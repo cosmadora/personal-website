@@ -4,7 +4,7 @@ title = "Adoras Website <3"
 enableGitInfo = true
 
 [params]
-description = "Adoras personal website and portfolio 💖"
+description = "Adoras personal website, cv and portfolio 💖"
 author = "Adora Laura Kalb"
 meta_title = "Adoras Website"
 
@@ -13,11 +13,17 @@ meta_title = "Adoras Website"
   author = true
 
 [[menu.main]]
+name = "CV/Lebenslauf"
+pageRef = "/cv/"
+weight = 1
+
+[[menu.main]]
 name = "Portfolio"
 pageRef = "/portfolio"
 weight = 2
 
-[[menu.main]]
-name = "Projects"
-pageRef = "/projects"
-weight = 3
+#[[menu.main]]
+#name = "Projects"
+#pageRef = "/projects"
+#weight = 3
+#

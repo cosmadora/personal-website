@@ -1,0 +1,18 @@
+{{ define "page" }}
+<content>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  <h2>Experience</h2>
+  {{ range .Pages.ByWeight.Reverse }}
+    <div class="section-page-item">
+        <h3>{{ .Params.position }} @ {{ .Params.company }}</h3>
+        <div class="details">
+          <time class="float-left">
+            {{ .Params.begin }} to {{ .Params.end | default "now" }}
+          </time>
+        </div>
+        {{ .Content }}
+    </div>
+  {{ end }}
+</content>
+{{ end }}
