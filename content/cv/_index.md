@@ -4,6 +4,7 @@ title: "Adoras CV"
 description: "Adoras CV ^-^"
 ---
 ## About me
+![Portrait of Adora](/images/portrait.webp)
 I’m a network engineer with a lot of software development experience, currently embroiled in network security, and I’ve managed mid-sized networks and Linux infrastructure aswell as Datacenter Networks and their automation. 
 
 I’m interested in enterprise networks and software automation and I’d love to combine those two!
