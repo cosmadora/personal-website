@@ -8,7 +8,7 @@
       {{- if eq $menu_item_url $page_url -}}
         <a href="{{ .URL }}" class="disabled" aria-current="page">{{ .Name }}</a>
       {{- else -}}
-        <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="nav-link" data-umami-event="{{ .Name }}">{{ .Name }}</a>
       {{- end -}}
     {{- end }}
   </div>
