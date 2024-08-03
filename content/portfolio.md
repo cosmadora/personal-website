@@ -11,21 +11,21 @@ Here you can find a list of projects I worked on or am currently working on:
 ## certwarden-deploy
 Language: `Go`  
 Source: [code.lila.network/adoralaura/certwarden-deploy](https://code.lila.network/adoralaura/certwarden-deploy)  
-Documentation: [certwarden-deploy.adora.codes](https://certwarden-deploy.adora.codes)
+Documentation: [certwarden-deploy.adora.codes](https://certwarden-deploy.adora.codes)  
 Latest Version: {{< latest-forgejo-version "adoralaura/certwarden-deploy" >}}  
 
 Deployment tool for (Let's Encrypt) certificates managed by a CertWarden Instance (similar to certbot or acme.sh, just without the ACME stuff)
 
 ## Mailcow Alias Automation
 Language: `Go`  
-Source: [code.lila.network/adoralaura/mailcow-admin-aliases](https://code.lila.network/adoralaura/mailcow-admin-aliases)
+Source: [code.lila.network/adoralaura/mailcow-admin-aliases](https://code.lila.network/adoralaura/mailcow-admin-aliases)  
 Latest Version: {{< latest-forgejo-version "adoralaura/mailcow-admin-aliases" >}}  
 
 Automates the creation of important admin mail aliases (think security@..., postmaster@...).
 
 ## ntppool-exporter
 Language: `Go`  
-Source: [code.lila.network/adoralaura/ntppool-exporter](https://code.lila.network/adoralaura/ntppool-exporter)
+Source: [code.lila.network/adoralaura/ntppool-exporter](https://code.lila.network/adoralaura/ntppool-exporter)  
 Latest Version: {{< latest-forgejo-version "adoralaura/ntppool-exporter" >}}  
 
 A Prometheus exporter application that pulls data from the ntppool.org API for a given NTP server and serves it in a Prometheus compatible format.
