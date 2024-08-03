@@ -30,6 +30,13 @@ Latest Version: {{< latest-forgejo-version "adoralaura/ntppool-exporter" >}}
 
 A Prometheus exporter application that pulls data from the ntppool.org API for a given NTP server and serves it in a Prometheus compatible format.
 
+## forgejo-release-proxy
+Language: `Go`  
+Source: [code.lila.network/adoralaura/forgejo-release-proxy](https://code.lila.network/adoralaura/forgejo-release-proxy)  
+Latest Version: {{< latest-forgejo-version "adoralaura/forgejo-release-proxy" >}}  
+
+A tiny proxy that this portfolio page here queries to display the latest releases for my projects. It communicates with the API of my forgejo Git Instance.
+
 ## IPAM
 Language: `Go`  
 Source: [https://codeberg.org/lauralani/ipam](https://codeberg.org/lauralani/ipam)
