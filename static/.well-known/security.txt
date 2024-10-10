@@ -1,4 +1,4 @@
-Contact: mailto:security@lauka.net
-Expires: 2033-08-08T21:59:00.000Z
+Contact: mailto:security@lila.network
+Expires: 2034-10-10T21:59:00.000Z
 Preferred-Languages: en, de
-Canonical: https://www.lauka.net/.well-known/security.txt
+Canonical: https://adora.codes/.well-known/security.txt
