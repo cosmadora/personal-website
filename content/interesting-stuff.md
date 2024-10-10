@@ -5,18 +5,15 @@ description: "A list of interesting things curated by Adora 🌠"
 A list of cool things, curated by me 🌠
 
 ## Stuff
-- [FireZone](https://www.firezone.dev/): Wireguard-GUI and config generator
+- [FireZone](https://www.firezone.dev/): Wireguard-GUI and config generator (💀, not selfhostabale anymore)
 - [Calcure](https://github.com/anufrievroman/calcure): TUI calendar app, installed via pip. Currently lacks support for `.ics` and external calendars.
 - [LittleLink](https://demo.littlelink-custom.com/): linktree alternative with php
 - [YourSpotify](https://github.com/Yooooomi/your_spotify): Spotify Dashboard for statistics and fun
-- [MDwiki](https://dynalon.github.io/mdwiki/#!faq.md) oder [Gollum](https://github.com/gollum/gollum): Wikis
 - [today](https://git.sr.ht/~sotirisp/today): shell app for journaling.
 - [devShort](https://git.sr.ht/~rwa/devshort): url shortener that looks intriguing ^-^
-- [Ursus](https://git.sr.ht/~whiisker/ursus): webapp for managing PowerDNS
+- [Ursus](https://git.sr.ht/~whiisker/ursus): webapp for managing PowerDNS (💀)
 - [chiaki](https://git.sr.ht/~thestr4ng3r): multi platform PS4 and PS5 remote play (feature complete)
 - [undocker](https://git.sr.ht/~motiejus/undocker): docker to rootfs converter
-- [Matrix: dendrite](https://matrix.org/docs/projects/server/dendrite): 2nd gen Matrix server
-- [ergo](https://ergo.chat/): Modern IRC implementation in Go
 
 ## CSS
 - [Design tools and Tips for Developers in a Hurry](https://github.com/sw-yx/spark-joy)
@@ -43,12 +40,6 @@ A list of cool things, curated by me 🌠
 - [https://themes.gohugo.io/themes/hugo-flex/](https://themes.gohugo.io/themes/hugo-flex/): Simple Website template
 - [A4 Resume](https://themes.gohugo.io/themes/resume-a4/): Resume Template
 
-## Zola Themes
-- [Oceanic Zen](https://github.com/barlog-m/oceanic-zen): Minimalistic dark theme
-
-## IAM
-- [WitchAuth](https://codeberg.org/cyberwitch/witchauth) tries to empower small communities and groups to have an identity provider for easy management and better security through SSO.
-
 ## Mail
 - [aerc](https://sr.ht/~rjarry/aerc) is an email client for your terminal
 
@@ -60,3 +51,7 @@ A list of cool things, curated by me 🌠
 
 ### Games
 - [OpenRA](https://www.openra.net): Red Alert, Command & Conquer,  Dune 2000 rebuilt for the Modern Era. Open Source and free!
+
+### HTTP
+- [Ohayou (おはよう)](https://github.com/hatoo/oha): HTTP load generator, inspired by rakyll/hey with tui animation
+- [GoAccess](https://goaccess.io): Real-time web log analyzer and interactive viewer
