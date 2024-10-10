@@ -8,7 +8,7 @@
         <h3>{{ .Params.position }} @ {{ .Params.company }}</h3>
         <div class="details">
           <time class="float-left">
-            {{ .Params.begin }} to {{ .Params.end | default "now" }}
+            {{ .Params.begin }} until {{ .Params.end | default "now" }}
           </time>
         </div>
         {{ .Content }}
