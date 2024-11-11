@@ -16,12 +16,15 @@ A list of cool things, curated by me 🌠
 - [undocker](https://git.sr.ht/~motiejus/undocker): docker to rootfs converter
 
 ## CSS
+- [Ant Design 5.0:](https://ant.design/) CSS Framework for very beautiful UI designs
+- [Puppertino:](https://codedgar.github.io/Puppertino/) CSS Framework to mimic MacOS ^-^
+Sonstiges:
 - [Design tools and Tips for Developers in a Hurry](https://github.com/sw-yx/spark-joy)
-- [Halfmoon](https://www.gethalfmoon.com/docs/) Framework which Codeberg based its design on
+- [Halfmoon:](https://www.gethalfmoon.com/docs/) Framework which Codeberg based its design on
 - [CSS Patterns](https://css-pattern.com/)
-- [Canadian design system](https://design.canada.ca) CSS Framework of the Canadian Government
-- [magick.css: ](https://css.winterveil.net/) minimalistic, (mostly) classless CSS that isjust simple and beautiful.
-- [Bulma: ](https://bulma.io/) Stylish CSS framework I wish to use for some apps ^-^
+- [Canadian design system:](https://design.canada.ca) CSS Framework of the Canadian Government
+- [magick.css:](https://css.winterveil.net/) minimalistic, (mostly) classless CSS that isjust simple and beautiful.
+- [Bulma:](https://bulma.io/) Stylish CSS framework I wish to use for some apps ^-^
 
 ## Fonts
 - [Comic Mono](https://dtinth.github.io/comic-mono-font/) Comic Sans in good, as a monospace font
