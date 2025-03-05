@@ -13,14 +13,19 @@ meta_title = "Adoras Website"
   author = true
 
 [[menu.main]]
+name = "Now"
+pageRef = "/now"
+weight = 1
+
+[[menu.main]]
 name = "CV/Lebenslauf"
 pageRef = "/cv/"
-weight = 1
+weight = 2
 
 [[menu.main]]
 name = "Portfolio"
 pageRef = "/portfolio"
-weight = 2
+weight = 3
 
 #[[menu.main]]
 #name = "Projects"
