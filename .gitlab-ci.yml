@@ -3,10 +3,13 @@ stages:
   - build
   - deploy
 
-build-hugo:
+build-and-deploy:
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
   stage: build
+  artifacts:
+    paths:
+      - public/
   variables:
     HUGO_VERSION: 0.135.0
     TZ: Europe/Berlin
