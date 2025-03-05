@@ -27,10 +27,13 @@ deploy-rsync:
     TARGET_PATH: /webroot/adora.codes
     RSYNC_TARGET_PORT: 2003
   before_script:
-    - apk add --update --no-cache openssh rsync git
+    - apk add --update --no-cache openssh rsync git tree
     - mkdir -p "$HOME/.ssh"
     - mv "$SSH_KEY_FILE" "$HOME/.ssh/id_ed25519"
     - chmod 0600 "$HOME/.ssh/id_ed25519"
     - ssh-keyscan -t ed25519 -p "$RSYNC_TARGET_PORT" "$RSYNC_TARGET_SERVER" >> "$HOME/.ssh/known_hosts"
   script:
+    - ls -lah
+    - pwd
+    - tree
     - rsync -avh -e "ssh -p $RSYNC_TARGET_PORT" --delete ./public/ "$RSYNC_TARGET_USER@$RSYNC_TARGET_SERVER:$TARGET_PATH"
