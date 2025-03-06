@@ -5,12 +5,10 @@ noindex: true
 ---
 ## Impressum
 
-_\[German law demands this\]_
+_\[German law demands this, but I don't see the need to doxx me\]_
 
 Adora Laura Kalb  
-Schulstr. 11  
-91334 Hemhofen  
-Kontakt: lauka (minus) website (at) lauka (punkt) net
+Kontakt: admin (at) lila (dot) network
 
 ## Datenschutzerklärung
 
