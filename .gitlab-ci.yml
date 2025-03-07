@@ -38,7 +38,4 @@ deploy-rsync:
     - chmod 0600 "$HOME/.ssh/id_ed25519"
     - ssh-keyscan -t ed25519 -p "$RSYNC_TARGET_PORT" "$RSYNC_TARGET_SERVER" >> "$HOME/.ssh/known_hosts"
   script:
-    - ls -lah
-    - pwd
-    - tree
     - rsync -avh -e "ssh -p $RSYNC_TARGET_PORT" --delete ./public/ "$RSYNC_TARGET_USER@$RSYNC_TARGET_SERVER:$TARGET_PATH"
