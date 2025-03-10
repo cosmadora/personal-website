@@ -27,6 +27,11 @@ name = "Portfolio"
 pageRef = "/portfolio"
 weight = 3
 
+[[menu.main]]
+name = "🛠️"
+pageRef = "/toolbox"
+weight = 4
+
 #[[menu.main]]
 #name = "Projects"
 #pageRef = "/projects"
