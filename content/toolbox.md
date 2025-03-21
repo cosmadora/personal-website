@@ -13,7 +13,7 @@ These are tools I frequently use in my development journey.
 ### Config Management
 
 - [Viper](https://github.com/spf13/viper) [`go get github.com/spf13/viper`]: Can do combined ENV, yaml, toml, etc. Very powerful.
-- [env](github.com/caarlos0/env) [`go get github.com/caarlos0/env/v11`]: A simple, zero-dependencies library to parse environment variables into structs
+- [env](https://github.com/caarlos0/env) [`go get github.com/caarlos0/env/v11`]: A simple, zero-dependencies library to parse environment variables into structs
 
 ### HTTP Routers
 
