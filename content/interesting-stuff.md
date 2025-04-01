@@ -5,6 +5,7 @@ description: "A list of interesting things curated by Adora 🌠"
 A list of cool things, curated by me 🌠
 
 ## Stuff
+
 - [FireZone](https://www.firezone.dev/): Wireguard-GUI and config generator (💀, not selfhostabale anymore)
 - [Calcure](https://github.com/anufrievroman/calcure): TUI calendar app, installed via pip. Currently lacks support for `.ics` and external calendars.
 - [LittleLink](https://demo.littlelink-custom.com/): linktree alternative with php
@@ -16,6 +17,7 @@ A list of cool things, curated by me 🌠
 - [undocker](https://git.sr.ht/~motiejus/undocker): docker to rootfs converter
 
 ## CSS
+
 - [Ant Design 5.0:](https://ant.design/) CSS Framework for very beautiful UI designs
 - [Puppertino:](https://codedgar.github.io/Puppertino/) CSS Framework to mimic MacOS ^-^
 Sonstiges:
@@ -27,11 +29,13 @@ Sonstiges:
 - [Bulma:](https://bulma.io/) Stylish CSS framework I wish to use for some apps ^-^
 
 ## Fonts
+
 - [Comic Mono](https://dtinth.github.io/comic-mono-font/) Comic Sans in good, as a monospace font
 - [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans) wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool
 - [B612 Font](https://b612-font.com/) B612 is an highly legible open source font family designed and tested to be used on aircraft cockpit screens.
 
 ## Hugo Themes
+
 - [https://adityatelange.github.io/hugo-PaperMod/](https://adityatelange.github.io/hugo-PaperMod/)
 - [https://hugo-profile.netlify.app/](https://hugo-profile.netlify.app/)
 - [https://themes.gohugo.io/themes/hugo-theme-zen/](https://themes.gohugo.io/themes/hugo-theme-zen/)
@@ -44,17 +48,21 @@ Sonstiges:
 - [A4 Resume](https://themes.gohugo.io/themes/resume-a4/): Resume Template
 
 ## Mail
+
 - [aerc](https://sr.ht/~rjarry/aerc) is an email client for your terminal
 
 ## Misc
+
 - [yet-another-bench-script](https://github.com/masonr/yet-another-bench-script) Benchmarking script that tests Storage, Network speed and CPU
 - [endlessh](https://github.com/skeeto/endlessh) SSH tarpit
 - [Byceps](https://byceps.nwsnet.de/) is a tool to prepare and operate LAN parties
 - [sli.dev](https://sli.dev/): Presentation Slides for Developers (with nodejs)
 
 ### Games
+
 - [OpenRA](https://www.openra.net): Red Alert, Command & Conquer,  Dune 2000 rebuilt for the Modern Era. Open Source and free!
 
 ### HTTP
+
 - [Ohayou (おはよう)](https://github.com/hatoo/oha): HTTP load generator, inspired by rakyll/hey with tui animation
 - [GoAccess](https://goaccess.io): Real-time web log analyzer and interactive viewer
