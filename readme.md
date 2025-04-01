@@ -1,8 +1,9 @@
 # Personal Website
+
 This is the source code for my personal website.
 
-It's built with https://gohugo.io and is available at https://adora.codes
+It's built with <https://gohugo.io> and is available at <https://adora.codes>
 
+CI-Status:
 
-CI-Status:  
-[![status-badge](https://ci.lila.network/api/badges/5/status.svg)](https://ci.lila.network/repos/5)
+[![pipeline status](https://gitlab.lila.network/adora-kalb/personal-website/badges/main/pipeline.svg?ignore_skipped=true)](https://gitlab.lila.network/adora-kalb/personal-website/-/commits/main)
