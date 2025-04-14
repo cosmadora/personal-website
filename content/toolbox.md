@@ -8,7 +8,7 @@ These are tools I frequently use in my development journey.
 
 ### CLI App Manager
 
-- [Cobra](https://github.com/spf13/cobra) [`go get github.com/spf13/cobra`]: Can do powerful modern CLI interfaces similar to git & go tools
+- [Kong](https://github.com/alecthomas/kong) [`go get github.com/alecthomas/kong`]: command-line parser for Go that supports complex command-line structures with minimal developer effort
 
 ### Config Management
 
