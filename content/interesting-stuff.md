@@ -16,7 +16,9 @@ A list of cool things, curated by me 🌠
 - [chiaki](https://git.sr.ht/~thestr4ng3r): multi platform PS4 and PS5 remote play (feature complete)
 - [undocker](https://git.sr.ht/~motiejus/undocker): docker to rootfs converter
 
-## CSS
+## Styling
+
+### CSS
 
 - [Ant Design 5.0:](https://ant.design/) CSS Framework for very beautiful UI designs
 - [Puppertino:](https://codedgar.github.io/Puppertino/) CSS Framework to mimic MacOS ^-^
@@ -27,6 +29,12 @@ Sonstiges:
 - [Canadian design system:](https://design.canada.ca) CSS Framework of the Canadian Government
 - [magick.css:](https://css.winterveil.net/) minimalistic, (mostly) classless CSS that isjust simple and beautiful.
 - [Bulma:](https://bulma.io/) Stylish CSS framework I wish to use for some apps ^-^
+
+### Markdown Styling
+
+- [stylemd](https://github.com/ddukbg/stylemd): generate static HTML pages from
+Markdown files with a collection of unique themes (Windows 98, Terminal, Geocities,
+C64, and more!)
 
 ## Fonts
 
