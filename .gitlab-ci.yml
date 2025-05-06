@@ -13,6 +13,8 @@ build-hugo:
   variables:
     TZ: Europe/Berlin
   image: docker.io/hugomods/hugo:base-0.147.2
+  before_script:
+    - apk add --update -y git
   script:
     - hugo --minify --destination ./public
 
