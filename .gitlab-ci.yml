@@ -11,7 +11,7 @@ build-hugo:
     paths:
       - public/
   variables:
-    HUGO_VERSION: 0.147.2
+    HUGO_VERSION: 0.147.9
     TZ: Europe/Berlin
   image: docker.io/library/golang:1.24-bookworm
   before_script:
@@ -27,12 +27,12 @@ deploy-rsync:
   needs:
     - build-hugo
   stage: deploy
-  image: docker.io/library/alpine:20250108
+  image: docker.io/library/alpine:3.22.0
   variables:
     TARGET_PATH: /webroot/adora.codes
-    RSYNC_TARGET_PORT: 2003
+    RSYNC_TARGET_PORT: 22
   before_script:
-    - apk add --update --no-cache openssh rsync git tree
+    - apk add --update --no-cache openssh rsync git
     - mkdir -p "$HOME/.ssh"
     - mv "$SSH_KEY_FILE" "$HOME/.ssh/id_ed25519"
     - chmod 0600 "$HOME/.ssh/id_ed25519"
