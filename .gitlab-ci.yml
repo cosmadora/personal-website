@@ -30,7 +30,6 @@ deploy-rsync:
   image: docker.io/library/alpine:3.22.0
   variables:
     TARGET_PATH: /webroot/adora.codes
-    RSYNC_TARGET_PORT: 22
   before_script:
     - apk add --update --no-cache openssh rsync git
     - mkdir -p "$HOME/.ssh"
