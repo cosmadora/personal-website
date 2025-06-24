@@ -1,3 +1,4 @@
 {{ if .Page.Params.JS.LatestVersion }}
-<script src="/js/latest-version.js" defer></script>
+{{ $js := resources.Get "js/latest-version.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}
