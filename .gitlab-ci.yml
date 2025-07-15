@@ -27,7 +27,7 @@ deploy-rsync:
   needs:
     - build-hugo
   stage: deploy
-  image: docker.io/library/alpine:3.22.0
+  image: docker.io/library/alpine:3.22.1
   variables:
     TARGET_PATH: /webroot/adora.codes
   before_script:
