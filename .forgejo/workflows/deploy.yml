@@ -1,0 +1,36 @@
+name: Deploy via rsync
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  TARGET_PATH: /webroot/adora.codes
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: https://github.com/actions/checkout@v5
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+      
+      - name: Setup rsync
+        run: apt-get update && apt-get install -y rsync git
+      
+      - name: Build website
+        run: hugo --minify --destination ./public
+
+      - name: Build website
+        run: |
+          mkdir -p "$HOME/.ssh"
+          echo "${{ secrets.SSH_KEY }}" > $HOME/.ssh/id_ed25519
+          chmod 0600 "$HOME/.ssh/id_ed25519"
+          ssh-keyscan -t ed25519 -p "${{ env.RSYNC_TARGET_PORT }}" "${{ env.RSYNC_TARGET_SERVER }}" >> "$HOME/.ssh/known_hosts"
+          rsync -avh -e "ssh -p ${{ env.RSYNC_TARGET_PORT }}" --delete ./public/ "${{ env.RSYNC_TARGET_USER }}@${{ env.RSYNC_TARGET_SERVER }}:${{ env.TARGET_PATH }}"
