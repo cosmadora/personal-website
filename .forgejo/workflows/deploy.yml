@@ -27,6 +27,9 @@ jobs:
       - name: Build website
         run: hugo --minify --destination ./public
 
+      - name: Debug
+        run: echo "port: ${{ env.RSYNC_TARGET_PORT }}"
+
       - name: Build website
         run: |
           mkdir -p "$HOME/.ssh"
