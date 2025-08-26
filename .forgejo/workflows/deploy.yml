@@ -27,13 +27,10 @@ jobs:
       - name: Build website
         run: hugo --minify --destination ./public
 
-      - name: Debug
-        run: echo "port=${{ env.test }}"
-
       - name: Build website
         run: |
           mkdir -p "$HOME/.ssh"
           echo "${{ secrets.SSH_KEY }}" > $HOME/.ssh/id_ed25519
           chmod 0600 "$HOME/.ssh/id_ed25519"
-          ssh-keyscan -t ed25519 -p "${{ env.RSYNC_TARGET_PORT }}" "${{ env.RSYNC_TARGET_SERVER }}" >> "$HOME/.ssh/known_hosts"
-          rsync -avh -e "ssh -p ${{ env.RSYNC_TARGET_PORT }}" --delete ./public/ "${{ env.RSYNC_TARGET_USER }}@${{ env.RSYNC_TARGET_SERVER }}:${{ env.TARGET_PATH }}"
+          ssh-keyscan -t ed25519 -p "${{ vars.RSYNC_TARGET_PORT }}" "${{ vars.RSYNC_TARGET_SERVER }}" >> "$HOME/.ssh/known_hosts"
+          rsync -avh -e "ssh -p ${{ vars.RSYNC_TARGET_PORT }}" --delete ./public/ "${{ vars.RSYNC_TARGET_USER }}@${{ vars.RSYNC_TARGET_SERVER }}:${{ env.TARGET_PATH }}"
