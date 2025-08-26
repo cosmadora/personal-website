@@ -2,17 +2,19 @@
 date: 2023-08-30T06:58:15+02:00
 ---
 
-Hi, my name is **Adora (or Laura) Kalb** and I (literally) do things on the internet.
+Hi, my name is **Adora** and I (literally) do things on the internet.
 
 ## About me
 
 ![Portrait of Adora](/images/portrait.webp)
-I'm a network engineer, with a pretty mixed technical background. I started my career in software
-development, and then moved on to be a sysadmin with main emphasis on linux environments.
-Afterwards, I was a mix of network engineer and site reliability engineer. I switched to managing
-the network infrastructure at a big datacenter provider, where I was supporting the automation of
-our infrastructure there. Currently I'm working in network security, and i'm doing a lot of Golang
-software development =).
+I'm a site reliability engineer, with a pretty mixed technical background. I started my
+career in software development, and then moved on to be a sysadmin with main emphasis
+on linux environments.Afterwards, I was part network architect/engineer, part site
+reliability engineer. I switched to managingthe network infrastructure at a big datacenter
+provider, where I was supporting the automation ofour infrastructure there. Then I tried
+some network security, and finally I work as a site reliability engineer again, focussing
+on automating infrastructure tasks on network and security equipment, mostly using Go
+and Python on Kubernetes.
 
 You can find a list of projects that I've already worked on [in my Portfolio](/portfolio), and you
 can find [ways to contact me below](#contact).
@@ -26,27 +28,18 @@ I also host public services:
 
 - a publicy available Stratum 2 NTP Server: `ntp1.adora.codes`
 
-## Books
-
-I always loved to read as many books as I can. So here I'm listing the books I've read since I
-started this webpage, including a rating and short description. These are the last few books
-I've rated:
-
-Coming soon
-
 ## Contact
 
 Some ways to contact me:
 
 - Fediverse: {{< fediverse-handle >}}
-- Email: `adora [at] lila [dot] network` [(PGP and S/MIME Keys)](/encryption/)
-- matrix: [@adora:catgirl.cloud](https://matrix.to/#/@adora:catgirl.cloud)
+- Email: `adora [at] lila [dot] network`
 - [LinkedIn](https://www.linkedin.com/in/laura-kalb/)
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 
 ## About this website
 
-This website is [open source](https://gitlab.lila.network/adora-kalb/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted on Debian 12 with Caddy.  
+This website is [open source](https://code.lila.network/adoras-projects/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted on Debian 12 with Caddy.  
   
 This page makes due without any cookies, javascript frameworks and databases in the effort to make the web quick and usable again :)  
   

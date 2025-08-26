@@ -12,7 +12,7 @@ Last updated: `{{< last-updated >}}`
 
 I'm currently working on the internal private Cloud platform of my employer. I manage the Arista switch fabric and the firewall, and I keep looking for ways to automate all the things.
 
-Last thing I did was automate block- and whitelisting on our Firewalls with Docker, Ansible and Gitlab.
+Last thing I did was automate block- and whitelisting on our Firewalls with Kubernetes, Golang and Github.
 
 ### Homelab
 
@@ -27,5 +27,5 @@ Ongoing:
 
 Planned:
 
-- Switch Border router with openWRT
+- Switch Border router with Mikrotik hex
 - Switch Ubiquiti AP with Mikrotik cAP
