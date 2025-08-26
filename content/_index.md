@@ -7,14 +7,13 @@ Hi, my name is **Adora** and I (literally) do things on the internet.
 ## About me
 
 ![Portrait of Adora](/images/portrait.webp)
-I'm a site reliability engineer, with a pretty mixed technical background. I started my
-career in software development, and then moved on to be a sysadmin with main emphasis
-on linux environments.Afterwards, I was part network architect/engineer, part site
-reliability engineer. I switched to managingthe network infrastructure at a big datacenter
-provider, where I was supporting the automation ofour infrastructure there. Then I tried
-some network security, and finally I work as a site reliability engineer again, focussing
-on automating infrastructure tasks on network and security equipment, mostly using Go
-and Python on Kubernetes.
+I'm a site reliability engineer with a diverse technical background. I started my
+career in software development before moving into system administration with an emphasis
+on Linux environments. Later, I worked as both a network architect/engineer and site
+reliability engineer. I then managed network infrastructure at a major german datacenter
+provider, where I supported infrastructure automation. After exploring network security,
+I returned to site reliability engineering, now focusing on automating infrastructure 
+tasks for network and security equipment, primarily using Go and Python on Kubernetes.
 
 You can find a list of projects that I've already worked on [in my Portfolio](/portfolio), and you
 can find [ways to contact me below](#contact).
