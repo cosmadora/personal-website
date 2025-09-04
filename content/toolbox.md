@@ -12,7 +12,7 @@ These are tools I frequently use in my development journey.
 
 ### Config Management
 
-- [Viper](https://github.com/spf13/viper) [`go get github.com/spf13/viper`]: Can do combined ENV, yaml, toml, etc. Very powerful.
+- [koanf](github.com/knadh/koanf) : Can do combined ENV, yaml, toml, etc. Very powerful. Alternative to `spf13/cobra`
 - [env](https://github.com/caarlos0/env) [`go get github.com/caarlos0/env/v11`]: A simple, zero-dependencies library to parse environment variables into structs
 
 ### Database Management
