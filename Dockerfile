@@ -1,6 +1,6 @@
 # Dockerfile
 # 1) Build Stage
-FROM docker.io/hugomods/hugo:debian-ci-0.157.0 AS build
+FROM docker.io/hugomods/hugo:debian-ci-0.154.5 AS build
 WORKDIR /src
 COPY . .
 RUN hugo --minify
