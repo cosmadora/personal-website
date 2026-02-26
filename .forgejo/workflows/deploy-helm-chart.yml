@@ -1,0 +1,31 @@
+name: Deploy forgejo-runner chart
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '.forgejo/workflows/deploy-helm-chart.yml'
+      - 'chart/**'
+
+env:
+  CHART_NAME: adoras-website
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: https://github.com/actions/checkout@v5
+
+      - name: Install Helm
+        uses: https://github.com/Azure/setup-helm@v4.3.1
+
+      - name: Lint Helm chart
+        run: helm lint ./${{ env.CHART_NAME }} --strict
+
+      - name: Package Helm chart
+        run: helm package ./${{ env.CHART_NAME }} --destination ${{ runner.temp }}/${{ env.CHART_NAME }}
+      
+      - name: Upload Helm chart
+        run: curl --user ${{ forgejo.repository_owner }}:${{ secrets.REGISTRY_TOKEN }} -X POST --upload-file ${{ runner.temp }}/${{ env.CHART_NAME }}/* ${{ forgejo.server_url }}/api/packages/${{ forgejo.repository_owner }}/helm/api/charts

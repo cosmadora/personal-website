@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "adoras-website.fullname" . }}
+  labels:
+    app: {{ include "adoras-website.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "adoras-website.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "adoras-website.name" . }}
+    spec:
+      containers:
+        - name: {{ include "adoras-website.name" . }}
+          image: "{{ if .Values.image.registry }}{{ .Values.image.registry }}/{{ end }}{{ .Values.image.repository }}:{{ default .Chart.AppVersion .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+
+          resources:
+{{- toYaml .Values.resources | nindent 12 }}
+
+          ports:
+            - name: http
+              containerPort: {{ .Values.containerPort }}
+
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.readiness.path }}
+              port: {{ .Values.containerPort }}
+            periodSeconds: {{ .Values.readiness.periodSeconds }}
+
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.liveness.path }}
+              port: {{ .Values.containerPort }}
+            periodSeconds: {{ .Values.liveness.periodSeconds }}
+
+{{- with .Values.image.pullSecrets }}
+      imagePullSecrets:
+{{- toYaml . | nindent 8 }}
+{{- end }}

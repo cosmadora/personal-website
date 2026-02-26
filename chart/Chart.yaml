@@ -1,0 +1,13 @@
+apiVersion: v2
+name: adoras-website
+version: 0.0.1
+appVersion: "v4.5.3"
+type: application
+description: Adoras static website, in Kubernetes ✨
+home: https://adora.codes/
+icon: https://code.lila.network/adoras-projects/personal-website/src/branch/main/static/android-chrome-512x512.png
+sources:
+  - https://code.lila.network/adoras-projects/personal-website
+maintainers:
+  - name: adora
+    url: https://code.lila.network/adora

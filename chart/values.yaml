@@ -1,0 +1,50 @@
+## Replica count (default 1 for single-instance deployments)
+replicaCount: 3
+
+# Optional name overrides
+nameOverride: ""
+fullnameOverride: ""
+
+image:
+  # Container registry host (optional)
+  registry: quay.io
+  # Repository (including org/group)
+  repository: lilanetwork/adoras-website
+  # If empty, will default to the chart's AppVersion
+  tag: ""
+  pullPolicy: IfNotPresent
+  # Optional image pull secrets (list of objects: - name: secretName)
+  pullSecrets: []
+
+# Service settings
+service:
+  type: ClusterIP
+  port: 80
+
+# Container port inside the pod
+containerPort: 80
+
+# Probes
+liveness:
+  path: /
+  periodSeconds: 10
+
+readiness:
+  path: /
+  periodSeconds: 5
+
+# Resource requests/limits (empty by default)
+resources: {}
+
+# HTTPRoute / ingress-like settings for Gateway API
+httpRoute:
+  enabled: true
+  hostname: "dummy.hostname.de"
+  gateway:
+    name: traefik-gateway
+    namespace: traefik
+    sectionName: websecure
+  path: "/"
+
+# HorizontalScaling / replicas can be overridden by the user
+autoscaling: {}

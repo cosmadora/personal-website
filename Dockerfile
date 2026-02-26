@@ -1,0 +1,10 @@
+# Dockerfile
+# 1) Build Stage
+FROM docker.io/hugomods/hugo:debian-ci-0.157.0 AS build
+WORKDIR /src
+COPY . .
+RUN hugo --minify
+
+# 2) Runtime Stage
+FROM docker.io/library/nginx:1.29.5-alpine
+COPY --from=build /src/public /usr/share/nginx/html

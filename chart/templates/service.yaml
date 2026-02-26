@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "adoras-website.fullname" . }}
+  labels:
+    app: {{ include "adoras-website.name" . }}
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: {{ include "adoras-website.name" . }}
+  ports:
+    - name: http
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.containerPort }}

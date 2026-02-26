@@ -1,0 +1,8 @@
+chart/
+.forgejo/
+.gitignore
+.dockerignore
+.gitlab-ci.yml
+.markdownlint.yml
+renovate.json
+readme.md
