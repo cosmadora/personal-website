@@ -80,4 +80,6 @@ jobs:
           echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}" >> $FORGEJO_ENV
       
       - name: Run Helm Value update script
-        run: ci/update-helm-values.sh
+        env:
+          ARGOCD_REPOS: ${{ vars.ARGOCD_REPOS }}
+        run: ./ci/update-helm-values.sh
