@@ -19,8 +19,14 @@ function ok {
     echo -e "${GREEN}$1${CLEAR}"
 }
 
-if [[ -z "$IMAGE_LABEL" ]]; then 
-  error "IMAGE_LABEL is empty"; 
+if [[ -z "${IMAGE_LABEL:-}" ]]; then 
+  error "IMAGE_LABEL is empty"
+  exit 1
+fi
+
+if [[ -z "${ARGOCD_REPOS:-}" ]]; then
+  error "ARGOCD_REPOS is empty"
+  exit 1
 fi
 
 BOT_NAME="lila-network-ci-bot"
@@ -69,6 +75,11 @@ update_repo() {  local repo_url="$1"
   warn "Setting git user for commits to $BOT_NAME <$BOT_EMAIL>"
   git config user.name "$BOT_NAME"
   git config user.email "$BOT_EMAIL"
+
+  warn "Enabling git commit signing"
+  git config --global gpg.format ssh
+  git config --global user.signingkey "$HOME/.ssh/id_ed25519.pub"
+
 
   warn "Updating image tag in $path_to_values"
   yq -i ".['adoras-website'].image.tag = \"${IMAGE_LABEL}\"" "$path_to_values"
