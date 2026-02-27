@@ -42,6 +42,7 @@ jobs:
         run: |
           DATE=$(date "+%Y%m%d%H%M")
           SHORT_SHA=$(git rev-parse --short ${{ forgejo.sha }})
+          echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}"
           echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}" >> $FORGEJO_ENV
 
       - name: Build and push images (multi-platform)
@@ -70,6 +71,13 @@ jobs:
           mkdir -p "$HOME/.ssh"
           echo "${{ secrets.ARGOCD_DEPLOY_KEY }}" > $HOME/.ssh/id_ed25519
           chmod 0600 "$HOME/.ssh/id_ed25519"
+      
+      - name: Set IMAGE_LABEL
+        run: |
+          DATE=$(date "+%Y%m%d%H%M")
+          SHORT_SHA=$(git rev-parse --short ${{ forgejo.sha }})
+          echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}"
+          echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}" >> $FORGEJO_ENV
       
       - name: Run Helm Value update script
         run: ci/update-helm-values.sh
