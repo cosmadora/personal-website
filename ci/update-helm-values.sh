@@ -93,8 +93,8 @@ update_repo() {  local repo_url="$1"
 
   warn "Committing and pushing changes to ${repo_name}"
   git add "$path_to_values"
-  git commit -m "chore(deploy): adoras-website -> ${IMAGE_LABEL} [skip ci]"
-  git push origin HEAD:main
+  git commit -m "chore(deploy): adoras-website -> ${IMAGE_LABEL} [skip ci]" --quiet
+  git push origin HEAD:main --quiet >/dev/null
 
   ok "Update completed for ${repo_name}"
   popd >/dev/null
