@@ -70,7 +70,8 @@ jobs:
         run: |
           mkdir -p "$HOME/.ssh"
           echo "${{ secrets.ARGOCD_DEPLOY_KEY }}" > $HOME/.ssh/id_ed25519
-          chmod 0600 "$HOME/.ssh/id_ed25519"
+          echo "${{ secrets.ARGOCD_DEPLOY_PUBKEY }}" > $HOME/.ssh/id_ed25519.pub
+          chmod 0600 "$HOME/.ssh/id_ed25519*"
       
       - name: Set IMAGE_LABEL
         run: |
