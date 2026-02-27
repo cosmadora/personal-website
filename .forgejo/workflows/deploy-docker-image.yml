@@ -40,7 +40,7 @@ jobs:
       
       - name: Set IMAGE_LABEL
         run: |
-          DATE=$(date "+%Y%m%d%H%M")
+          DATE=$(date "+%Y%m%d")
           SHORT_SHA=$(git rev-parse --short ${{ forgejo.sha }})
           echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}"
           echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}" >> $FORGEJO_ENV
@@ -74,7 +74,7 @@ jobs:
       
       - name: Set IMAGE_LABEL
         run: |
-          DATE=$(date "+%Y%m%d%H%M")
+          DATE=$(date "+%Y%m%d")
           SHORT_SHA=$(git rev-parse --short ${{ forgejo.sha }})
           echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}"
           echo "IMAGE_LABEL=${DATE}-${SHORT_SHA}" >> $FORGEJO_ENV
