@@ -100,4 +100,4 @@ update_repo() {  local repo_url="$1"
   popd >/dev/null
 }
 
-update_all_repos "charts/website/values.yaml"
+update_all_repos "adoras-website/values.yaml"
