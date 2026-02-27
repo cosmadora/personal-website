@@ -82,7 +82,7 @@ update_repo() {  local repo_url="$1"
 
 
   warn "Updating image tag in $path_to_values"
-  yq -i ".['adoras-website'].image.tag = \"${IMAGE_LABEL}\"" "$path_to_values"
+  yq -i ".[\"adoras-website\"].image.tag = \"${IMAGE_LABEL}\"" "$path_to_values"
 
   warn "Checking diff"
   if git diff --quiet; then
