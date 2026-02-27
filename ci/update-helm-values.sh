@@ -19,8 +19,8 @@ function ok {
     echo -e "${GREEN}$1${CLEAR}"
 }
 
-if [[ -z "$IMAGE_TAG" ]]; then 
-  error "IMAGE_TAG is empty"; 
+if [[ -z "$IMAGE_LABEL" ]]; then 
+  error "IMAGE_LABEL is empty"; 
 fi
 
 BOT_NAME="lila-network-ci-bot"
@@ -55,7 +55,7 @@ update_repo() {  local repo_url="$1"
   local repo_name="${3:-private-repo}"
 
   ok "Repo: ${repo_name}"
-  ok "Image-Tag: $IMAGE_TAG"
+  ok "Image-Tag: $IMAGE_LABEL"
   ok "values.yaml path: $path_to_values"
 
   workdir="$(mktemp -d)"
@@ -71,7 +71,7 @@ update_repo() {  local repo_url="$1"
   git config user.email "$BOT_EMAIL"
 
   warn "Updating image tag in $path_to_values"
-  yq -i ".['adoras-website'].image.tag = \"${IMAGE_TAG}\"" "$path_to_values"
+  yq -i ".['adoras-website'].image.tag = \"${IMAGE_LABEL}\"" "$path_to_values"
 
   warn "Checking diff"
   if git diff --quiet; then
@@ -82,7 +82,7 @@ update_repo() {  local repo_url="$1"
 
   warn "Committing and pushing changes to ${repo_name}"
   git add "$path_to_values"
-  git commit -m "chore(deploy): adoras-website -> ${IMAGE_TAG} [skip ci]"
+  git commit -m "chore(deploy): adoras-website -> ${IMAGE_LABEL} [skip ci]"
   git push origin HEAD:main
 
   ok "Update completed for ${repo_name}"
