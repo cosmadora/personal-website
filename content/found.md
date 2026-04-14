@@ -18,9 +18,7 @@ Thank you ♥
 
 ## ✉️ Kontaktwege / Ways to contact me
 
-_Telefon/Phone:_ +49 172 2585130  
 _Email:_ <adora@lila.network>  
-_Discord:_ @lauralani  
 _Fediverse:_ [@adoralaura@tech.lgbt](https://tech.lgbt/@adoralaura)  
 _Matrix:_ [@adora:catgirl.cloud](https://matrix.to/#/@adora:catgirl.cloud)  
 

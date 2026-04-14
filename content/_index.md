@@ -11,9 +11,10 @@ I'm a site reliability engineer with a diverse technical background. I started m
 career in software development before moving into system administration with an emphasis
 on Linux environments. Later, I worked as both a network architect/engineer and site
 reliability engineer. I then managed network infrastructure at a major german datacenter
-provider, where I supported infrastructure automation. After exploring network security,
-I returned to site reliability engineering, now focusing on automating infrastructure 
-tasks for network and security equipment, primarily using Go and Python on Kubernetes.
+provider, where I supported infrastructure automation. After exploring network security
+for a bit, I returned to site reliability engineering, now focusing on automating
+infrastructure tasks for network and security equipment, primarily using Go and Python
+on Kubernetes.
 
 You can find a list of projects that I've already worked on [in my Portfolio](/portfolio), and you
 can find [ways to contact me below](#contact).
@@ -38,7 +39,7 @@ Some ways to contact me:
 
 ## About this website
 
-This website is [open source](https://code.lila.network/adoras-projects/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted on Debian 12 with Caddy.  
+This website is [open source](https://code.lila.network/adoras-projects/personal-website). It's an entirely static site generated with [{{< hugo-version >}}](https://gohugo.io/) and hosted on two different kubernetes clusters for high availability and fun 🌷.  
   
 This page makes due without any cookies, javascript frameworks and databases in the effort to make the web quick and usable again :)  
   

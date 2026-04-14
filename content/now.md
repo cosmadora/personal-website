@@ -10,9 +10,9 @@ Last updated: `{{< last-updated >}}`
 
 ### Work
 
-I'm currently working on the internal private Cloud platform of my employer. I manage the Arista switch fabric and the firewall, and I keep looking for ways to automate all the things.
+I'm currently working on the internal private Cloud platform of my employer. My focus is on automation and supporting colleagues to automate.
 
-Last thing I did was automate block- and whitelisting on our Firewalls with Kubernetes, Golang and Github.
+Last thing I did was to setup a highly available netbox on kubernetes proof of concept, and make infrastructure assets available as self service with crossplane.
 
 ### Homelab
 
@@ -22,10 +22,15 @@ A while ago I set up our internal DNS servers with streaming database replicatio
 
 Ongoing:
 
+- Switched border router and access point to mikrotik
+- Set up kubernetes cluster with bgp announcements
+- Building scripts to strengthen homelab resilience
+
+Done:
+
 - Rework backups from CIFS (Hetzner Storage Box) to restic (to S3 offsite storage)
 - Automate stuff like MOTD, Monitoring agents etc. via Ansible
 
 Planned:
 
-- Switch Border router with Mikrotik hex
-- Switch Ubiquiti AP with Mikrotik cAP
+- nothing atm

@@ -6,6 +6,8 @@ description: "Overview of Adoras GPG and SMIME encryption keys"
 
 Last updated: `{{< last-updated >}}`
 
+⚠️ INFO: I haven't touched this page in quite a while. Some certs may be outdated.
+
 ## GPG Keys
 
 ### <adora@lila.network>
