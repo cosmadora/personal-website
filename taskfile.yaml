@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  default:
+    desc: Serve Hugo site
+    cmds:
+      - hugo serve
+
+  build:
+    desc: Build Hugo site
+    cmds:
+      - hugo build

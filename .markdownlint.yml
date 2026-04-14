@@ -1,2 +1,4 @@
-MD024: false # no-duplicate-heading : Multiple headings with the same content
+MD001: false # Heading levels should only increment by one level at a time
 MD013: false # line-length : Line length
+MD024: false # no-duplicate-heading : Multiple headings with the same content
+MD041: false # First line in a file should be a top-level heading
