@@ -23,7 +23,7 @@ jobs:
         run: apt-get update && apt-get install -y sudo iptables git
 
       - name: Set up Docker
-        uses: https://github.com/docker/setup-docker-action@v4
+        uses: https://github.com/docker/setup-docker-action@v5
 
       - name: Set up QEMU
         uses: https://github.com/docker/setup-qemu-action@v3
