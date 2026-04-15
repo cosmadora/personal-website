@@ -6,5 +6,5 @@ COPY . .
 RUN hugo --minify
 
 # 2) Runtime Stage
-FROM docker.io/library/nginx:1.29.7-alpine
+FROM docker.io/library/nginx:1.30.0-alpine
 COPY --from=build /src/public /usr/share/nginx/html
