@@ -34,7 +34,7 @@ Some ways to contact me:
 
 - Fediverse: {{< fediverse-handle >}}
 - Email: `adora [at] lila [dot] network`
-- [LinkedIn](https://www.linkedin.com/in/laura-kalb/)
+- [LinkedIn](https://www.linkedin.com/in/adora-kalb/)
 - [XING](https://www.xing.com/profile/Laura_Kalb3/)
 
 ## About this website

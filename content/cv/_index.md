@@ -1,7 +1,12 @@
 ---
 date: 2024-07-14 18:20:00+02:00
-title: "Adoras CV"
+title: "Adora Laura Kalb"
 description: "Adoras CV ^-^"
+params:
+  email: "career@adora.codes"
+  website: "https://adora.codes"
+  linkedin: "https://www.linkedin.com/in/adora-kalb/"
+
 ---
 ## About me
 ![Portrait of Adora](/images/portrait.webp)

@@ -1,18 +1,75 @@
 {{ define "page" }}
-<content>
-  <h1>{{ .Title }}</h1>
-  <p>{{ .Content }}</p>
-  <h2>Experience</h2>
-  {{ range .Pages.ByWeight.Reverse }}
-    <div class="section-page-item">
-        <h3>{{ .Params.position }} @ {{ .Params.company }}</h3>
-        <div class="details">
-          <time class="float-left">
-            {{ .Params.begin }} until {{ .Params.end | default "now" }}
-          </time>
-        </div>
-        {{ .Content }}
+<article class="cv-page">
+  {{ $hasContact := or .Params.email .Params.website .Params.portfolio .Params.linkedin }}
+  <header class="cv-hero">
+    <div class="cv-hero__main">
+      <p class="cv-eyebrow">Curriculum Vitae</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.role }}
+        <p class="cv-role">{{ . }}</p>
+      {{ end }}
     </div>
-  {{ end }}
-</content>
+
+    {{ if $hasContact }}
+      <ul class="cv-contact" role="list">
+        {{ with .Params.email }}
+          <li>
+            <span>Email</span>
+            <a class="cv-contact__link" href="mailto:{{ . }}" data-umami-event="CV: Email link">{{ . }}</a>
+          </li>
+        {{ end }}
+        {{ with .Params.website }}
+          <li>
+            <span>Website</span>
+            <a class="cv-contact__link" href="{{ . }}">{{ replaceRE "^https?://" "" . }}</a>
+          </li>
+        {{ end }}
+        {{ with .Params.portfolio }}
+          <li>
+            <span>Portfolio</span>
+            <a class="cv-contact__link" href="{{ . }}">{{ replaceRE "^https?://" "" . }}</a>
+          </li>
+        {{ end }}
+        {{ with .Params.linkedin }}
+          <li>
+            <span>LinkedIn</span>
+            <a class="cv-contact__link" href="{{ . }}" data-umami-event="CV: Linkedin link">Adora Laura Kalb</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </header>
+
+  <div class="cv-layout">
+    <aside class="cv-sidebar">
+      <div class="cv-panel">
+        {{ .Content }}
+      </div>
+    </aside>
+
+    <section class="cv-main">
+      <div class="cv-panel">
+        <h2>Experience</h2>
+        {{ range .Pages.ByWeight.Reverse }}
+          <article class="cv-entry">
+            <header class="cv-entry__header">
+              <div>
+                <h3>{{ .Params.position }}</h3>
+                <p class="cv-entry__company">{{ .Params.company }}</p>
+              </div>
+              <p class="cv-entry__dates">
+                <time>{{ .Params.begin }}</time>
+                <span aria-hidden="true"> - </span>
+                <time>{{ .Params.end | default "Present" }}</time>
+              </p>
+            </header>
+            <div class="cv-entry__body">
+              {{ .Content }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+</article>
 {{ end }}
