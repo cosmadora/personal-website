@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
-        uses: https://github.com/actions/checkout@v5
+        uses: https://github.com/actions/checkout@v7
       
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
