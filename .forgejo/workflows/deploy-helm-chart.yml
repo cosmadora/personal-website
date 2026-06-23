@@ -19,7 +19,7 @@ jobs:
         uses: https://github.com/actions/checkout@v5
 
       - name: Install Helm
-        uses: https://github.com/Azure/setup-helm@v4.3.1
+        uses: https://github.com/Azure/setup-helm@v5.0.1
 
       - name: Lint Helm chart
         run: helm lint ./chart --strict
