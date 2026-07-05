@@ -1,0 +1,47 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const siteTitle = 'Adoras Website <3';
+
+const menu = [
+  { name: 'Now', href: '/now' },
+  { name: 'CV/Lebenslauf', href: '/cv/' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: '🛠️', href: '/toolbox' },
+];
+
+function normalizePath(path: string) {
+  if (path === '/') return '/';
+  return path.endsWith('/') ? path.slice(0, -1) : path;
+}
+
+function isActive(href: string) {
+  return normalizePath(currentPath) === normalizePath(href);
+}
+---
+
+<nav>
+  <div class="hero-text float-left">
+    <a href="/" class="nav-link special">{siteTitle}</a>
+  </div>
+
+  <div class="float-right">
+    {
+      menu.map((item) =>
+        isActive(item.href) ? (
+          <a href={item.href} class="disabled" aria-current="page">
+            {item.name}
+          </a>
+        ) : (
+          <a href={item.href} class="nav-link" data-umami-event={item.name}>
+            {item.name}
+          </a>
+        )
+      )
+    }
+  </div>
+</nav>

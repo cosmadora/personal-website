@@ -1,0 +1,23 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const {
+  title = 'Adoras Website <3',
+  description = 'Adoras personal website, cv and portfolio 🌷',
+  noindex = false,
+} = Astro.props.frontmatter;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  noindex={noindex}
+>
+  <article class="container">
+    <content>
+      {title && <h1>{title}</h1>}
+      <br />
+      <slot />
+    </content>
+  </article>
+</BaseLayout>

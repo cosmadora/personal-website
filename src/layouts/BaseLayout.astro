@@ -1,0 +1,37 @@
+---
+import '../styles/style.scss';
+import Nav from '../components/Nav.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Analytics from '../components/Analytics.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = 'Adoras Website <3',
+  description = 'Adoras personal website, cv and portfolio 🌷',
+  noindex = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      noindex={noindex}
+    />
+  </head>
+
+  <body>
+    <Nav currentPath={Astro.url.pathname} />
+
+    <slot />
+
+    <Analytics />
+  </body>
+</html>

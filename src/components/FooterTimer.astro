@@ -1,0 +1,56 @@
+^-^ <a id="inconspicuous-timer-a" href="/images/secret.jpg"><i id="inconspicuous-timer"></i></a>
+
+<script is:inline>
+  const startDate = new Date("2023-12-28T16:34:56+01:00");
+
+  function getTimeSince(startDate) {
+    const currentDate = new Date();
+
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+    let months = currentDate.getMonth() - startDate.getMonth();
+    let days = currentDate.getDate() - startDate.getDate();
+    let hours = currentDate.getHours() - startDate.getHours();
+    let minutes = currentDate.getMinutes() - startDate.getMinutes();
+
+    if (minutes < 0) {
+      hours--;
+      minutes += 60;
+    }
+
+    if (hours < 0) {
+      days--;
+      hours += 24;
+    }
+
+    if (days < 0) {
+      months--;
+
+      const daysInPreviousMonth = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        0
+      ).getDate();
+
+      days += daysInPreviousMonth;
+    }
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    return { years, months, days, hours, minutes };
+  }
+
+  function updateHtml() {
+    const result = getTimeSince(startDate);
+    const timerElement = document.getElementById("inconspicuous-timer");
+
+    if (!timerElement) return;
+
+    timerElement.textContent = `${result.years}y ${result.months}m ${result.days}d ${result.hours}h ${result.minutes}min`;
+  }
+
+  updateHtml();
+  setInterval(updateHtml, 10000);
+</script>

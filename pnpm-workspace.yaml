@@ -1,0 +1,93 @@
+packages:
+  - "."
+
+# Store pnpm project settings here.
+# Keep registry tokens and other secrets out of this file.
+
+# Save exact versions when adding dependencies.
+saveExact: true
+
+# Avoid accidental root installs.
+ignoreWorkspaceRootCheck: false
+
+# Wait before accepting newly published versions.
+# 1440 = 1 day.
+# 10080 = 7 days.
+# A 7-day delay is conservative and reduces exposure to fresh malicious releases.
+minimumReleaseAge: 10080
+
+# Keep installs practical for already resolved lockfile entries.
+minimumReleaseAgeStrict: false
+
+# Allow specific trusted or emergency packages to bypass the release-age delay.
+# Keep this list short and review every entry.
+minimumReleaseAgeExclude:
+  - "@types/*"
+  - '@astrojs/compiler-binding-darwin-arm64@0.3.0'
+  - '@astrojs/compiler-binding-darwin-x64@0.3.0'
+  - '@astrojs/compiler-binding-linux-arm64-gnu@0.3.0'
+  - '@astrojs/compiler-binding-linux-arm64-musl@0.3.0'
+  - '@astrojs/compiler-binding-linux-x64-gnu@0.3.0'
+  - '@astrojs/compiler-binding-linux-x64-musl@0.3.0'
+  - '@astrojs/compiler-binding-wasm32-wasi@0.3.0'
+  - '@astrojs/compiler-binding-win32-arm64-msvc@0.3.0'
+  - '@astrojs/compiler-binding-win32-x64-msvc@0.3.0'
+  - '@astrojs/compiler-binding@0.3.0'
+  - '@astrojs/compiler-rs@0.3.0'
+  - '@astrojs/internal-helpers@0.10.1'
+  - '@astrojs/markdown-satteri@0.3.3'
+  - astro@7.0.6
+  - '@astrojs/markdown-remark@7.2.1'
+  - '@astrojs/mdx@7.0.2'
+  - '@astrojs/vue@7.0.1'
+  # Example emergency bypass:
+  # - "some-vulnerable-package@1.2.3"
+
+  # Fail if dependency trust evidence downgrades compared to earlier releases.
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - 'semver@6.3.1'
+
+# Block exotic protocols in transitive dependencies.
+# This reduces exposure to git URLs, direct tarballs, and similar risky sources.
+blockExoticSubdeps: true
+
+# Fail on unapproved dependency build scripts.
+strictDepBuilds: true
+
+# Explicitly allow or deny install scripts.
+# Start restrictive and add entries only after review.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  "@parcel/watcher": true
+  core-js: false
+  core-js-pure: false
+  fsevents: false
+
+# Prefer local workspace packages when possible.
+preferWorkspacePackages: true
+
+# Link workspace packages.
+# Use workspace:* ranges for internal packages.
+linkWorkspacePackages: true
+
+# Keep dependency layout strict.
+shamefullyHoist: false
+
+# Avoid public hoisting unless a legacy tool requires it.
+publicHoistPattern: []
+
+# Verify dependencies before running scripts.
+verifyDepsBeforeRun: install
+
+# Audit policy.
+auditLevel: high
+
+# Only ignore advisories with documented justification and review date.
+auditConfig:
+  ignoreGhsas: []
+    # GHSA-xxxx-yyyy-zzzz:
+    #   reason: "Not reachable in this project. Reviewed 2026-07-05."
+    #   expires: "2026-08-05."
