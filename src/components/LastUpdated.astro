@@ -1,0 +1,17 @@
+---
+interface Props {
+  date?: string | Date;
+}
+
+const { date } = Astro.props;
+
+const value = date
+  ? new Date(date).toLocaleString('de-DE', {
+      timeZone: 'Europe/Berlin',
+      hour12: false,
+      dateStyle: "medium",
+    })
+  : '';
+---
+
+{value}

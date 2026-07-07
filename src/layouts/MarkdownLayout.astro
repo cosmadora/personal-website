@@ -1,0 +1,29 @@
+---
+import { lazy } from 'astro:schema';
+import BaseLayout from './BaseLayout.astro';
+
+const frontmatter = Astro.props.frontmatter;
+
+const {
+  title = 'Adoras Website <3',
+  description = 'Adoras personal website, cv and portfolio 🌷',
+  noindex = false,
+} = frontmatter;
+
+const lang = frontmatter.lang ?? Astro.currentLocale ?? 'en';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  noindex={noindex}
+  lang={lang}
+>
+  <article class="container">
+    <content>
+      {title && <h1>{title}</h1>}
+      <br />
+      <slot />
+    </content>
+  </article>
+</BaseLayout>

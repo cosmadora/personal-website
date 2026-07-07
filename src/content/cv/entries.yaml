@@ -1,0 +1,72 @@
+cv:
+  meta:
+    title: "Adora Laura Kalb"
+    description: "Adoras CV ^-^"
+    role: "Software Engineer"
+    email: "career@adora.codes"
+    website: "https://adora.codes"
+    # portfolio: "https://adora.codes/portfolio"
+    linkedin: "https://www.linkedin.com/in/adora-kalb/"
+  
+  skills:
+    - category: Software Development
+      content: "Go, Python, C#, REST-APIs, Git, CI/CD, HTML, CSS, Javascript/Typescript"
+    - category: Automation & Infrastructure
+      content: "Ansible, Docker, Linux, Kubernetes"
+    - category: Network & Security
+      content: "Arista, Arbor Peakflow, Fortigate, Check Point"
+
+  languages:
+    - name: 🇩🇪 German
+      level: native speaker
+    - name: 🇬🇧 English
+      level: professional
+
+  experience:
+    - company: "DATEV eG"
+      position: "Site Reliability Engineer"
+      begin: Sep 2024
+      end: null
+      weight: 6
+      description: |
+        I'm responsible for managing DATEVs own on premise private cloud with Kubernetes, OpenStack, Terraform and various other Identity, OIDC, Email and Storage providers.
+    - company: "DATEV eG"
+      position: "IT Security Engineer"
+      begin: May 2023
+      end: Sep 2024
+      weight: 5
+      description: |
+        At DATEV I'm managing our firewall fleet, and I analyze IDPS Alerts and other IT Security incidents. 
+        In addition to that, I help automate internal processes and help with design implementations. 
+        In addition to that, I teach network and firewalling classes in the DATEV Azubi-LAB.
+    - company: "noris network AG"
+      position: "Network Engineer"
+      begin: Nov 2021
+      end: Apr 2023
+      weight: 4
+      description: |
+        I was responsible for design, deployment and maintenance of our datacenter network infrastructure. 
+        In addition to that, I was working on implementing and automating a new datacenter fabric. 
+        I primarily used Juniper, Arista and Fortigate hardware. 
+        Management of noris' and our customers Extreme Networks WiFi hardware was also part of my responsibility.
+    - company: "BRZ Deutschland GmbH"
+      position: "Administrator Communication and Security"
+      begin: Feb 2019
+      end: Oct 2021
+      weight: 3
+      description: |
+        Administrator and Specialist responsible for management of switching, routing and security infrastructure. 
+        I was primarily responsible for the design and deployment of 100G Datacenter Backbone-Infrastructure, deployment of a L3 campus design and the introduction of a hybrid cloud/on-prem datacenter. 
+        In addition to that, I taught our Azubis and administered our Cisco PBX.
+    - company: "BRZ Deutschland GmbH"
+      position: "Apprenticeship Systems Integration"
+      begin: Aug 2016
+      end: Feb 2019
+      weight: 2
+      description: Apprenticeship Systems Integration
+    - company: "COI GmbH"
+      position: "Apprenticeship Software Development"
+      begin: "Sep 2012"
+      end: Aug 2015
+      weight: 1
+      description: Apprenticeship Software Development

@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import portrait from "@/assets/portrait.webp"; // Image is 1600x900
+---
+
+<Image
+  src={portrait}
+  alt="Portrait of Adora"
+  loading="eager"
+  fetchpriority="high"
+/>

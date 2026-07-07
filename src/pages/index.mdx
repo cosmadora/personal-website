@@ -1,0 +1,58 @@
+---
+lastUpdated: "2026-07-05"
+layout: ../layouts/HomeLayout.astro
+---
+
+import FediverseHandle from '@/components/FediverseHandle.astro';
+import Portrait from "@/components/Portrait.astro"
+import FooterTimer from '@/components/FooterTimer.astro';
+import LastUpdated from '@/components/LastUpdated.astro';
+import AstroVersion from '@/components/AstroVersion.astro';
+import VueVersion from '@/components/VueVersion.astro';
+import { Image } from 'astro:assets';
+import portrait from '@/assets/portrait.webp'; // Image is 1600x900
+
+Hi, my name is **Adora** and I (literally) do things on the internet.
+
+## About me
+
+<Portrait />
+I'm a site reliability engineer with a diverse technical background. I started my
+career in software development before moving into system administration with an emphasis
+on Linux environments. Later, I worked as both a network architect/engineer and site
+reliability engineer. I then managed network infrastructure at a major german datacenter
+provider, where I supported infrastructure automation. After exploring network security
+for a bit, I returned to site reliability engineering, now focusing on automating
+infrastructure tasks for network and security equipment, primarily using Go and Python
+on Kubernetes.
+
+You can find a list of projects that I've already worked on [in my Portfolio](/portfolio), and you
+can find [ways to contact me below](#contact).
+
+## Some nice stuff
+
+A list of **tools**, **projects** and **fun stuff** that I already
+have worked on or that I want to work on in the future: [A list of awesome stuff curated by me!](/interesting-stuff)
+
+I also host public services:
+
+- a publicy available Stratum 2 NTP Server: `ntp1.adora.codes`
+
+## Contact
+
+Some ways to contact me:
+
+- Fediverse: <FediverseHandle />
+- Email: `adora [at] lila [dot] network`
+- [LinkedIn](https://www.linkedin.com/in/adora-kalb/)
+- [XING](https://www.xing.com/profile/AdoraLaura_Kalb)
+
+## About this website
+
+This website is [open source](https://code.lila.network/adoras-projects/personal-website). It's an entirely static site generated with [<AstroVersion />](https://astro.build/) and [<VueVersion />](https://vuejs.org/) hosted on GitHub Pages for fun 🌷.  
+  
+This page makes due without any cookies or databases, only utilizing isolated interactive islands to keep the web quick and usable again :)  
+  
+This page was last updated at <LastUpdated date={frontmatter.lastUpdated} />
+
+<FooterTimer />

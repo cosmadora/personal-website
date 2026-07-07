@@ -1,0 +1,41 @@
+---
+title: "Now"
+description: "See whats going on right now in Adoras tech life"
+lastUpdated: 2026-06-05
+layout: ../layouts/MarkdownLayout.astro
+---
+
+import LastUpdated from '@/components/LastUpdated.astro';
+
+What's going on here?
+
+This is a __now__ page. I'll mention here what I am up to right now at work, in our homelab, etc. Updates to this page will be infrequent, as I know myself to be a bit forgetful about such things. This was inspired by the movement at [nownownow.com](https://nownownow.com/about) ^-^
+
+Last updated: <code><LastUpdated date={frontmatter.lastUpdated} /></code>
+
+### Work
+
+I'm currently working on the internal private Cloud platform of my employer. My focus is on automation and supporting colleagues to automate.
+
+Last thing I did was to setup a highly available netbox on kubernetes proof of concept, and make infrastructure assets available as self service with crossplane.
+
+### Homelab
+
+Writing scripts and stuff in Go to automate stuff :)
+
+A while ago I set up our internal DNS servers with streaming database replication (with dnsdist, unbound, powerdns, and postgres 16)
+
+Ongoing:
+- Building scripts to strengthen homelab resilience
+
+
+Done:
+
+- Set up kubernetes cluster with bgp announcements
+- Switched border router and access point to mikrotik
+- Rework backups from CIFS (Hetzner Storage Box) to restic (to S3 offsite storage)
+- Automate stuff like MOTD, Monitoring agents etc. via Ansible
+
+Planned:
+
+- nothing atm

@@ -1,0 +1,34 @@
+---
+interface Props {
+  position: string;
+  company: string;
+  startTime: string;
+  endTime?: string | null;
+  description: string;
+}
+
+const {
+  position,
+  company,
+  startTime,
+  endTime = "Present",
+  description,
+} = Astro.props;
+---
+
+<article class="cv-entry">
+  <header class="cv-entry__header">
+    <div>
+      <h3>{position}</h3>
+      <p class="cv-entry__company">{company}</p>
+    </div>
+    <p class="cv-entry__dates">
+      <time>{startTime}</time>
+      <span aria-hidden="true"> - </span>
+      <time>{endTime ? endTime : "now"}</time>
+    </p>
+  </header>
+  <div class="cv-entry__body">
+    {description}
+  </div>
+</article>

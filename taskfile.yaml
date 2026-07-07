@@ -2,11 +2,37 @@ version: '3'
 
 tasks:
   default:
-    desc: Serve Hugo site
+    desc: Serve Astro site
     cmds:
-      - hugo serve
+      - pnpm dev
 
   build:
-    desc: Build Hugo site
+    desc: Build Astro site
     cmds:
-      - hugo build
+      - pnpm build
+
+  pack:
+    desc: Pack the project into a single .tar
+    vars:
+      PACK_FILE: "../personal-website.tar"
+    cmds:
+      - rm -f {{.PACK_FILE}}
+      - tar -rf {{.PACK_FILE}} .dockerignore
+      - tar -rf {{.PACK_FILE}} .forgejo/
+      - tar -rf {{.PACK_FILE}} .markdownlint.yml
+      - tar -rf {{.PACK_FILE}} AGENTS.md
+      - tar -rf {{.PACK_FILE}} astro.config.mjs
+      - tar -rf {{.PACK_FILE}} chart/
+      - tar -rf {{.PACK_FILE}} ci/
+      - tar -rf {{.PACK_FILE}} Dockerfile
+      - tar -rf {{.PACK_FILE}} legacy/
+      - tar -rf {{.PACK_FILE}} LICENSE
+      - tar -rf {{.PACK_FILE}} package.json
+      - tar -rf {{.PACK_FILE}} pnpm-lock.yaml
+      - tar -rf {{.PACK_FILE}} pnpm-workspace.yaml
+      - tar -rf {{.PACK_FILE}} public/
+      - tar -rf {{.PACK_FILE}} README.md
+      - tar -rf {{.PACK_FILE}} renovate.json
+      - tar -rf {{.PACK_FILE}} src/
+      - tar -rf {{.PACK_FILE}} taskfile.yaml
+      - tar -rf {{.PACK_FILE}} tsconfig.json

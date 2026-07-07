@@ -1,0 +1,22 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Footer from '@/components/layout/Footer.astro';
+
+const {
+  title = 'Adoras Website <3',
+  description = 'Adoras personal website, cv and portfolio 🌷',
+  noindex = false,
+} = Astro.props.frontmatter;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  noindex={noindex}
+>
+  <content>
+    <slot />
+  </content>
+
+  <Footer />
+</BaseLayout>
