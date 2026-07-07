@@ -7,5 +7,9 @@ import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [mdx(), vue()]
+  integrations: [mdx(), vue()],
+  i18n: {
+    locales: ["en", "de"],
+    defaultLocale: "en",
+  }
 });

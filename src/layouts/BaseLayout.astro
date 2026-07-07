@@ -1,24 +1,28 @@
 ---
 import '../styles/style.scss';
-import Nav from '../components/Nav.astro';
-import BaseHead from '../components/BaseHead.astro';
+import Nav from '../components/layout/Nav.astro';
+import BaseHead from '../components/layout/BaseHead.astro';
 import Analytics from '../components/Analytics.astro';
 
 interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  bodyClass?: string;
+  lang?: string;
 }
 
 const {
   title = 'Adoras Website <3',
   description = 'Adoras personal website, cv and portfolio 🌷',
   noindex = false,
+  bodyClass,
+  lang = Astro.currentLocale ?? 'en',
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <BaseHead
       title={title}
@@ -27,7 +31,7 @@ const {
     />
   </head>
 
-  <body>
+  <body class={bodyClass}>
     <Nav currentPath={Astro.url.pathname} />
 
     <slot />

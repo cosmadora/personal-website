@@ -1,12 +1,15 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
+import BaseHead from "@/components/layout/BaseHead.astro";
 ---
 
-<BaseHead
-  title="404 - Adoras Website <3"
-  description="Adoras personal website, cv and portfolio 🌷"
-  noindex={false}
-/>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="404 - Adoras Website <3"
+      description="Adoras personal website, cv and portfolio 🌷"
+      noindex={true}
+    />
+  </head>
   <body>
     <div class="content">
       <img
@@ -17,13 +20,14 @@ import BaseHead from "../components/BaseHead.astro";
         <h1>Oops, looks like someone ate the page!?</h1>
         <p>Unfortunately the page you tried to access doesn't exist.</p>
         <p>
-        You can try to <a href="javascript:window.history.back();">go back</a> 
-        &nbsp;or&nbsp;
-        <a href="/">go home ;)</a></p>
+          You can try to <a href="javascript:window.history.back();">go back</a>
+          &nbsp;or&nbsp;
+          <a href="/">go home ;)</a>
+        </p>
       </div>
     </div>
   </body>
-
+</html>
 <style scoped>
   html,
   body {

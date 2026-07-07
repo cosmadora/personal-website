@@ -1,0 +1,12 @@
+---
+interface Props {
+  category: string;
+  content: string;
+}
+
+const { category, content } = Astro.props;
+---
+
+<li>
+  <strong>{category}</strong>: {content}
+</li>

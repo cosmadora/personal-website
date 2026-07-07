@@ -2,14 +2,14 @@ version: '3'
 
 tasks:
   default:
-    desc: Serve Hugo site
+    desc: Serve Astro site
     cmds:
-      - hugo serve
+      - pnpm dev
 
   build:
-    desc: Build Hugo site
+    desc: Build Astro site
     cmds:
-      - hugo build
+      - pnpm build
 
   pack:
     desc: Pack the project into a single .tar

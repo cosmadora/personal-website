@@ -3,19 +3,20 @@ lastUpdated: "2026-07-05"
 layout: ../layouts/HomeLayout.astro
 ---
 
-import FediverseHandle from '../components/FediverseHandle.astro';
-import FooterTimer from '../components/FooterTimer.astro';
-import LastUpdated from '../components/LastUpdated.astro';
-import AstroVersion from '../components/AstroVersion.astro';
-import VueVersion from '../components/VueVersion.astro';
+import FediverseHandle from '@/components/FediverseHandle.astro';
+import Portrait from "@/components/Portrait.astro"
+import FooterTimer from '@/components/FooterTimer.astro';
+import LastUpdated from '@/components/LastUpdated.astro';
+import AstroVersion from '@/components/AstroVersion.astro';
+import VueVersion from '@/components/VueVersion.astro';
 import { Image } from 'astro:assets';
-import portrait from '../assets/portrait.webp'; // Image is 1600x900
+import portrait from '@/assets/portrait.webp'; // Image is 1600x900
 
 Hi, my name is **Adora** and I (literally) do things on the internet.
 
 ## About me
 
-<Image src={portrait} alt="Portrait of Adora" />
+<Portrait />
 I'm a site reliability engineer with a diverse technical background. I started my
 career in software development before moving into system administration with an emphasis
 on Linux environments. Later, I worked as both a network architect/engineer and site
@@ -48,9 +49,9 @@ Some ways to contact me:
 
 ## About this website
 
-This website is [open source](https://code.lila.network/adoras-projects/personal-website). It's an entirely static site generated with [<AstroVersion />](https://astro.build/) and [<VueVersion />](https://vuejs.org/) hosted on [BunnyCDN](https://bunny.net/) for performance and fun 🌷.  
+This website is [open source](https://code.lila.network/adoras-projects/personal-website). It's an entirely static site generated with [<AstroVersion />](https://astro.build/) and [<VueVersion />](https://vuejs.org/) hosted on GitHub Pages for fun 🌷.  
   
-This page makes due without any cookies or databases, utilizing isolated interactive islands to keep the web quick and usable again :)  
+This page makes due without any cookies or databases, only utilizing isolated interactive islands to keep the web quick and usable again :)  
   
 This page was last updated at <LastUpdated date={frontmatter.lastUpdated} />
 

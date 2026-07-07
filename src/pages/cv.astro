@@ -1,0 +1,184 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Portrait from "@/components/Portrait.astro"
+import ExperienceItem from "@/components/cv/ExperienceItem.astro";
+import SkillItem from "@/components/cv/SkillItem.astro";
+import LanguageItem from "@/components/cv/LanguageItem.astro";
+
+const cv = await getEntry("cv", "cv");
+
+if (!cv) {
+  throw new Error("Missing CV data entry: cv");
+}
+
+const { meta, skills, languages, experience } = cv.data;
+const sortedExperience = [...experience].sort((a, b) => b.weight - a.weight);
+const contactEmailHref = "mailto:" + meta.email;
+---
+
+<BaseLayout
+  title={meta.title}
+  description={meta.description}
+  bodyClass="page-cv"
+>
+  <article class="cv-page">
+    <header class="cv-hero">
+      <div class="cv-hero__main">
+        <p class="cv-eyebrow">Curriculum Vitae</p>
+        <h1>{meta.title}</h1>
+        {meta.role && <p class="cv-role">{meta.role}</p>}
+      </div>
+
+      <ul class="cv-contact" role="list">
+        {
+          meta.email && (
+            <li>
+              <span>Email</span>
+
+              <a
+                class="cv-contact__link"
+                href={contactEmailHref}
+                data-umami-event="CV: Email link"
+              >
+                {meta.email}
+              </a>
+            </li>
+          )
+        }
+
+        {
+          meta.website && (
+            <li>
+              <span>Website</span>
+              <a class="cv-contact__link" href={meta.website}>
+                {meta.website.replace("https://", "")}
+              </a>
+            </li>
+          )
+        }
+
+        {
+          meta.portfolio && (
+            <li>
+              <span>Portfolio</span>
+              <a class="cv-contact__link" href={meta.portfolio}>
+                {meta.portfolio.replace("https://", "")}
+              </a>
+            </li>
+          )
+        }
+
+        {
+          meta.linkedin && (
+            <li>
+              <span>LinkedIn</span>
+              <a class="cv-contact__link" href={meta.linkedin}>
+                {meta.linkedin.replace("https://www.", "")}
+              </a>
+            </li>
+          )
+        }
+      </ul>
+    </header>
+
+    <div class="cv-layout">
+      <aside class="cv-sidebar">
+        <div class="cv-panel">
+          <h2>About me</h2>
+          <p>
+            <Portrait />
+            I build automation, tooling and integrations for infrastructure and network
+            environments, backed by hands-on network engineering experience.
+          </p>
+          <p>
+            I'm especially interested in enterprise networks, infrastructure
+            automation, and the ways software can make complex systems easier to
+            operate.
+          </p>
+          <p>
+            In my spare time, I work on open source software projects, usually
+            in&nbsp;
+            <a href="https://go.dev">Go</a>, and lately also with&nbsp;
+            <a href="https://www.djangoproject.com/">Django</a> and&nbsp;
+            <a href="https://vuejs.org/">Vue.js</a>.&nbsp;
+            <span class="hide-print">
+              You can find my&nbsp;
+              <a href="/portfolio/" data-umami-event="CV: Portfolio-Link">
+                software portfolio here</a
+              >.
+            </span>
+          </p>
+          <div class="cv-sidebar__compact-grid">
+            <section class="cv-sidebar__section">
+              <h2>Skills</h2>
+              <ul>
+                {
+                  skills.map((entry) => (
+                    <SkillItem
+                      category={entry.category}
+                      content={entry.content}
+                    />
+                  ))
+                }
+              </ul>
+            </section>
+
+            <section class="cv-sidebar__section">
+              <h2>Languages</h2>
+              <ul>
+                {
+                  languages.map((entry) => (
+                    <LanguageItem name={entry.name} level={entry.level} />
+                  ))
+                }
+              </ul>
+            </section>
+          </div>
+        </div>
+      </aside>
+
+      <section class="cv-main">
+        <div class="cv-panel">
+          <h2>Experience</h2>
+          {
+            sortedExperience.map((entry) => (
+              <ExperienceItem
+                position={entry.position}
+                company={entry.company}
+                startTime={entry.begin}
+                endTime={entry.end}
+                description={entry.description}
+              />
+            ))
+          }
+        </div>
+      </section>
+    </div>
+    <!--
+    <h1>{meta.title}</h1>
+
+    {meta.role && <p>{meta.role}</p>}
+
+    <section>
+      {summary.split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      {
+        sortedExperience.map((entry) => (
+          <ExperienceItem
+            position={entry.position}
+            company={entry.company}
+            startTime={entry.begin}
+            endTime={entry.end}
+            description={entry.description}
+          />
+        ))
+      }
+    </section>
+     -->
+  </article>
+</BaseLayout>
