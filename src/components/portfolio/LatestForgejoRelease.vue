@@ -27,7 +27,7 @@ const apiUrl = computed(() => {
   return `${base}/api/v1/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repoName)}/releases/latest`;
 });
 
-async function loadLatestRelease() {
+async function loadLatestForgejoRelease() {
   if (!apiUrl.value) {
     status.value = 'error';
     version.value = 'invalid repo';
@@ -62,7 +62,7 @@ async function loadLatestRelease() {
   }
 }
 
-onMounted(loadLatestRelease);
+onMounted(loadLatestForgejoRelease);
 </script>
 
 <template>

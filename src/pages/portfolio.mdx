@@ -4,16 +4,17 @@ description: "Adoras Software Development portfolio"
 layout: ../layouts/MarkdownLayout.astro
 ---
 
-import LatestForgejoRelease from '@/components/LatestForgejoRelease.vue';
+import LatestForgejoRelease from '@/components/portfolio/LatestForgejoRelease.vue';
+import LatestGithubRelease from '@/components/portfolio/LatestGithubRelease.vue';
 
 Here you can find a list of projects I worked on or am currently working on:
 
 ## certwarden-deploy
 
 Language: `Go`  
-Source: [code.lila.network/lila-network/certwarden-deploy](https://code.lila.network/lila-network/certwarden-deploy)  
-Documentation: [certwarden-deploy.adora.codes](https://certwarden-deploy.adora.codes)  
-Latest Version: <LatestForgejoRelease repo="lila-network/certwarden-deploy" client:visible />  
+Source: [github.com/lila-network/certwarden-deploy](https://github.com/lila-network/certwarden-deploy)  
+Documentation: [certwarden-deploy.lila.network](https://certwarden-deploy.lila.network/)  
+Latest Version: <LatestGithubRelease repo="lila-network/certwarden-deploy" client:visible />  
 
 Deployment tool for (Let's Encrypt) certificates managed by a CertWarden Instance (similar to certbot or acme.sh, just without the ACME stuff)
 
