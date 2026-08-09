@@ -2,6 +2,11 @@ version: '3'
 
 tasks:
   default:
+    silent: true
+    cmds:
+      - task --list
+
+  run:
     desc: Serve Astro site
     cmds:
       - pnpm dev
@@ -20,7 +25,6 @@ tasks:
       - tar -rf {{.PACK_FILE}} .dockerignore
       - tar -rf {{.PACK_FILE}} .forgejo/
       - tar -rf {{.PACK_FILE}} .markdownlint.yml
-      - tar -rf {{.PACK_FILE}} AGENTS.md
       - tar -rf {{.PACK_FILE}} astro.config.mjs
       - tar -rf {{.PACK_FILE}} chart/
       - tar -rf {{.PACK_FILE}} ci/

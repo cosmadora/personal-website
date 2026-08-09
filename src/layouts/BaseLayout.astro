@@ -1,8 +1,9 @@
 ---
-import '../styles/style.scss';
-import Nav from '../components/layout/Nav.astro';
-import BaseHead from '../components/layout/BaseHead.astro';
-import Analytics from '../components/Analytics.astro';
+import '@/styles/style.scss';
+import Nav from '@/components/layout/Nav.astro';
+import BaseHead from '@/components/layout/BaseHead.astro';
+import Analytics from '@/components/Analytics.astro';
+import PrimeFlowBackground from '@/components/PrimeFlowBackground.astro';
 
 interface Props {
   title?: string;
@@ -32,6 +33,7 @@ const {
   </head>
 
   <body class={bodyClass}>
+    <PrimeFlowBackground />
     <Nav currentPath={Astro.url.pathname} />
 
     <slot />
