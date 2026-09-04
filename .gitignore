@@ -20,9 +20,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
+# jetbrains/vscode setting folder
 .idea/
-
-
-# Hugo -> Astro migration artifacts
-legacy/
+.vscode/
